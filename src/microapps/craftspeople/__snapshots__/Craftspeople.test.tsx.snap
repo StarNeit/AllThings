@@ -1,0 +1,603 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Craftspeople should render Craftspeople 1`] = `
+.css-0,
+[data-css-0] {
+  width: 100%;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.css-1,
+[data-css-1] {
+  width: 12px;
+  height: 12px;
+}
+
+.css-2,
+[data-css-2] {
+  width: 100%;
+}
+
+.css-3,
+[data-css-3] {
+  min-height: 0;
+  background-color: #f3f5f7;
+}
+
+.css-4,
+[data-css-4] {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1em;
+  margin-bottom: 7px;
+  letter-spacing: -2px;
+  word-wrap: break-word;
+}
+
+.css-5,
+[data-css-5] {
+  height: 100%;
+}
+
+.css-6,
+[data-css-6] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 1;
+}
+
+.css-7,
+[data-css-7] {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #f3f5f7;
+  height: 100%;
+}
+
+.css-8,
+[data-css-8] {
+  min-width: 0;
+  width: 100%;
+  padding: 20px 15px 0px;
+}
+
+.css-9,
+[data-css-9] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-10,
+[data-css-10] {
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  -webkit-flex: 1 1 100%;
+}
+
+.css-11,
+[data-css-11] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-12,
+[data-css-12] {
+  display: inline-block;
+}
+
+.css-13,
+[data-css-13] {
+  overflow: hidden;
+}
+
+.css-14,
+[data-css-14] {
+  transform: translate3d(0%, 0, 0);
+  transition: .5s;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+}
+
+.css-15,
+[data-css-15] {
+  box-sizing: border-box;
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+.css-16,
+[data-css-16] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 1;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 1;
+}
+
+.css-17,
+[data-css-17] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-18,
+[data-css-18] {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.css-19,
+[data-css-19] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-20,
+[data-css-20] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  cursor: pointer;
+  background-color: white;
+}
+
+.css-21,
+[data-css-21] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 1 1 100%;
+  cursor: pointer;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 1 1 100%;
+}
+
+.css-22,
+[data-css-22] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 100%;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 1 1 100%;
+}
+
+.css-23,
+[data-css-23] {
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+}
+
+.css-24,
+[data-css-24] {
+  width: 16px;
+  height: 16px;
+  stroke: #7e8c8d;
+}
+
+@media (min-width: 641px) and (max-width: 1024px), (min-width: 1025px) {
+  .css-li9bei,
+  [data-css-li9bei] {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 1025px), (min-width: 641px) and (max-width: 1024px) {
+  .css-8,
+  [data-css-8] {
+    padding: 20px 0 0 0;
+  }
+}
+
+<Connect(Connect(withRequest(Connect(ComponentWithMixpanel))))>
+  <Connect(withRequest(Connect(ComponentWithMixpanel)))
+    addresses={
+      Array [
+        Object {
+          "id": "1234",
+          "key": "Address#1",
+        },
+        Object {
+          "id": "3456",
+          "key": "Address#2",
+        },
+      ]
+    }
+    dispatch={[Function]}
+    locale="en_US"
+  >
+    <Connect(ComponentWithMixpanel)
+      addresses={
+        Array [
+          Object {
+            "id": "1234",
+            "key": "Address#1",
+          },
+          Object {
+            "id": "3456",
+            "key": "Address#2",
+          },
+        ]
+      }
+      createRequest={[Function]}
+      dispatch={[Function]}
+      locale="en_US"
+    >
+      <ForwardRef
+        data-css-3=""
+        direction="column"
+        flex="flex"
+      >
+        <div
+          data-css-6=""
+          data-css-3=""
+        >
+          <ForwardRef
+            padded="horizontal"
+          >
+            <ForwardRef
+              data-css-7=""
+              data-css-li9bei=""
+              direction="column"
+              flex="flex"
+              onScroll={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              style={Object {}}
+            >
+              <div
+                data-css-6=""
+                data-css-7=""
+                data-css-li9bei=""
+                onScroll={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                style={Object {}}
+              >
+                <ForwardRef
+                  direction="row"
+                >
+                  <div
+                    data-css-9=""
+                  >
+                    <ForwardRef
+                      data-css-8=""
+                      flex="grow"
+                    >
+                      <div
+                        data-css-8=""
+                        data-css-10=""
+                      >
+                        <ForwardRef
+                          data-css-4=""
+                        >
+                          <div
+                            data-css-11=""
+                            data-css-4=""
+                          >
+                            <div
+                              data-css-12=""
+                            >
+                              Craftspeople
+                            </div>
+                          </div>
+                        </ForwardRef>
+                      </div>
+                    </ForwardRef>
+                  </div>
+                </ForwardRef>
+                <ForwardRef
+                  data-css-13=""
+                  flex="flex"
+                >
+                  <div
+                    data-css-15=""
+                    data-css-13=""
+                  >
+                    <ForwardRef
+                      data-css-14=""
+                      data-css-5=""
+                      direction="row"
+                      flex="flex"
+                      onTransitionEnd={[Function]}
+                    >
+                      <div
+                        data-css-14=""
+                        data-css-16=""
+                        data-css-5=""
+                        onTransitionEnd={[Function]}
+                      >
+                        <ForwardRef
+                          data-css-2=""
+                          direction="column"
+                          flex="none"
+                          key="0/.0"
+                        >
+                          <div
+                            data-css-2=""
+                            data-css-17=""
+                          >
+                            <ForwardRef>
+                              <div
+                                data-css-11=""
+                              >
+                                <ForwardRef
+                                  data-css-18=""
+                                >
+                                  <div
+                                    data-css-18=""
+                                    data-css-11=""
+                                  >
+                                    <ForwardRef
+                                      data-css-19=""
+                                    >
+                                      <div
+                                        data-css-19=""
+                                        data-css-11=""
+                                      />
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                                <ForwardRef
+                                  data-css-0=""
+                                >
+                                  <div
+                                    data-css-0=""
+                                    data-css-11=""
+                                  >
+                                    <ForwardRef>
+                                      <ForwardRef
+                                        direction="column"
+                                      >
+                                        <div
+                                          data-css-17=""
+                                        >
+                                          <ForwardRef
+                                            alignV="center"
+                                            data-css-20=""
+                                            data-e2e="1234-craftspeople-address"
+                                            direction="row"
+                                            flex="grow"
+                                            onClick={[Function]}
+                                          >
+                                            <div
+                                              data-css-20=""
+                                              data-css-21=""
+                                              data-e2e="1234-craftspeople-address"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef
+                                                data-css-2=""
+                                                direction="column"
+                                                flex="grow"
+                                              >
+                                                <div
+                                                  data-css-22=""
+                                                  data-css-2=""
+                                                >
+                                                  Address#1
+                                                </div>
+                                              </ForwardRef>
+                                              <ForwardRef
+                                                flex="nogrow"
+                                              >
+                                                <div
+                                                  data-css-23=""
+                                                >
+                                                  <ForwardRef
+                                                    alignH="center"
+                                                    alignV="center"
+                                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                        "__html": "",
+                                                      }
+                                                    }
+                                                    data-css-24=""
+                                                    data-css-1=""
+                                                  >
+                                                    <div
+                                                      dangerouslySetInnerHTML={
+                                                        Object {
+                                                          "__html": "",
+                                                        }
+                                                      }
+                                                      data-css-24=""
+                                                      data-css-1=""
+                                                      data-css-11=""
+                                                    />
+                                                  </ForwardRef>
+                                                </div>
+                                              </ForwardRef>
+                                            </div>
+                                          </ForwardRef>
+                                          <ForwardRef
+                                            alignV="center"
+                                            data-css-20=""
+                                            data-e2e="3456-craftspeople-address"
+                                            direction="row"
+                                            flex="grow"
+                                            onClick={[Function]}
+                                          >
+                                            <div
+                                              data-css-20=""
+                                              data-css-21=""
+                                              data-e2e="3456-craftspeople-address"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef
+                                                data-css-2=""
+                                                direction="column"
+                                                flex="grow"
+                                              >
+                                                <div
+                                                  data-css-22=""
+                                                  data-css-2=""
+                                                >
+                                                  Address#2
+                                                </div>
+                                              </ForwardRef>
+                                              <ForwardRef
+                                                flex="nogrow"
+                                              >
+                                                <div
+                                                  data-css-23=""
+                                                >
+                                                  <ForwardRef
+                                                    alignH="center"
+                                                    alignV="center"
+                                                    dangerouslySetInnerHTML={
+                                                      Object {
+                                                        "__html": "",
+                                                      }
+                                                    }
+                                                    data-css-24=""
+                                                    data-css-1=""
+                                                  >
+                                                    <div
+                                                      dangerouslySetInnerHTML={
+                                                        Object {
+                                                          "__html": "",
+                                                        }
+                                                      }
+                                                      data-css-24=""
+                                                      data-css-1=""
+                                                      data-css-11=""
+                                                    />
+                                                  </ForwardRef>
+                                                </div>
+                                              </ForwardRef>
+                                            </div>
+                                          </ForwardRef>
+                                        </div>
+                                      </ForwardRef>
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                              </div>
+                            </ForwardRef>
+                          </div>
+                        </ForwardRef>
+                      </div>
+                    </ForwardRef>
+                  </div>
+                </ForwardRef>
+              </div>
+            </ForwardRef>
+          </ForwardRef>
+        </div>
+      </ForwardRef>
+    </Connect(ComponentWithMixpanel)>
+  </Connect(withRequest(Connect(ComponentWithMixpanel)))>
+</Connect(Connect(withRequest(Connect(ComponentWithMixpanel))))>
+`;

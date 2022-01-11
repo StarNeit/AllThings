@@ -1,0 +1,4 @@
+settings:
+  deploymenBucket: allthings-lambda-deployments-${self:provider.region}
+  notificationArns: arn:aws:sns:${self:provider.region}:${self:custom.awsAccountId}:serverless-events
+  role: arn:aws:iam::${self:custom.awsAccountId}:role/aws-lambda-basic-execution-role

@@ -1,0 +1,147 @@
+/* Prevent overscroll/bounce scroll in iOS */
+/* Inconsistent results on simulator, need to test this on real device:
+@media all and (max-width: 880px) {
+  body {
+    position: fixed;
+  }
+}*/
+
+body {
+  background-position-y: 100%;
+  background-repeat: repeat-x;
+  background-color: #75bdcd;
+  /* Move the overflow to the app container so that the background
+  /* won't be scrollable! */
+  overflow: hidden;
+}
+
+@media all and (max-width: 760px) {
+  body {
+    background-position-y: 100%;
+    background-size: cover;
+  }
+}
+
+body,
+html,
+#app {
+  height: 100%;
+  min-width: 320px;
+}
+
+#app {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#exteral-app-wrapper {
+  width: 100%;
+  height: calc(100vh - 70px);
+  border: 0;
+  position: fixed;
+  top: 70px;
+  display: block;
+  z-index: 10;
+  transition: all 0.5s;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #ffffff;
+}
+
+#exteral-app-wrapper.closed {
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+#external-app {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (min-width: 880px) {
+  #exteral-app-wrapper {
+    width: calc(100% - 375px);
+    top: 0px;
+    left: 375px;
+    height: 100vh;
+    max-width: 880px;
+    transform: translateY(0) !important;
+    transition: none !important;
+  }
+}
+
+iframe.loggedOut {
+  width: 100%;
+  top: 70px;
+  left: 0px;
+  max-width: 100%;
+}
+
+.formGroup {
+  position: relative;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+}
+button[disabled] > i.appIcon {
+  background-color: #ecf0f1 !important;
+}
+
+.mainContent-wrapper {
+  background: #ffffff;
+  padding: 0;
+}
+
+.mainContent-wrapper.wrapped {
+  padding: 13px;
+}
+
+.mainWrapper {
+  min-height: 100vh;
+}
+
+.mainWrapper.loggedScreen {
+  overflow: hidden;
+}
+
+.gallery .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* react-swipe wrapper */
+.gallery > div {
+  display: flex;
+  align-items: center;
+}
+
+.gallery img.item {
+  display: inline-block;
+  max-height: 70vh;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media all and (min-width: 931px) {
+  .loggedScreen .mainContent {
+    min-height: calc(100vh - 50px);
+  }
+
+  .loggedScreen > div.mainContentOuterWrapper {
+    max-width: 880px;
+    height: auto;
+  }
+
+  .gallery .item {
+    height: auto;
+    min-height: 50vh;
+  }
+}
+
+.formGroup-item-tooltip p {
+  color: white !important;
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JsonContainer Component 1`] = `
+<span
+  data-state="{}"
+  id="test"
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+/>
+`;

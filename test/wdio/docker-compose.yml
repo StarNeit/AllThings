@@ -1,0 +1,201 @@
+version: '2.2'
+volumes:
+  assets:
+  app_public:
+  cockpit_public:
+  accounts_public:
+services:
+  mongodb:
+    image: mongo:3.6
+  mongorestore:
+    image: allthings/db-data
+    volumes:
+      - assets:/data/assets
+    depends_on:
+      - mongodb
+  postgres:
+    image: postgres:alpine
+    environment:
+      POSTGRES_PASSWORD: not_a_secret
+      POSTGRES_USER: postgres
+  postgres-restore:
+    image: allthings/postgres-restore
+    volumes:
+      - assets:/data/assets
+    environment:
+      POSTGRES_PASSWORD: not_a_secret
+      PGPASSWORD: not_a_secret
+      POSTGRES_USER: postgres
+    depends_on:
+      - postgres
+  redis:
+    image: redis:2.8
+  mailhog:
+    image: allthings/mailhog
+    ports:
+      - 127.0.0.1:8025:8025
+  rope:
+    image: allthings/rope
+    environment:
+      - LOGGING=true
+      - PGHOST=postgres
+      - PGUSER=postgres
+      - PGPASSWORD=not_a_secret
+      - PGPORT=5432
+      - PGDATABASE=role_permission
+    depends_on:
+      - postgres-restore
+  messagetemplates:
+    image: allthings/messagetemplates
+  php:
+    image: allthings/php-prod
+    volumes:
+      - assets:/srv/www/symfony/web/assets
+    environment:
+      - SYMFONY_ENV=ci
+      - SYMFONY__MONGODB__DBNAME=qipp_core_dev
+      - SYMFONY__ASSETS__BASE__URL=https://assets.dev.allthings.me/
+      - SYMFONY__MAX__LOGIN__ATTEMPTS=999999999999
+      - SYMFONY__ROPE__CONNECT__URL=http://rope
+      - SYMFONY__ROPE__PORT=7000
+      - SYMFONY__ROPE__CUSTOM__HEADER=
+    depends_on:
+      - mongorestore
+      - redis
+      - mailhog
+      - rope
+      - messagetemplates
+  api:
+    image: allthings/nginx-api-proxy
+    volumes:
+      - assets:/srv/www/symfony/web/assets:ro
+    environment:
+      - SSL_PASS
+    depends_on:
+      - php
+  accounts:
+    image: allthings/accounts
+    volumes:
+      - accounts_public:/srv/www/accounts/public:ro
+    environment:
+      - ALLTHINGS_ACCOUNTS_RECAPTCHA_SECRET_KEY
+  app:
+    image: allthings/app
+    volumes:
+      - app_public:/srv/www/app/public
+  cockpit:
+    image: allthings/cockpit
+    volumes:
+      - cockpit_public:/srv/www/cockpit/public
+  graphql:
+    image: allthings/graphql
+    environment:
+      - NODE_ENV
+      - PORT=6000
+      - LOGGING=
+      - GOOGLE_API_KEY
+  insights:
+    image: allthings/insights
+    environment:
+      - NODE_ENV
+      - PORT=9620
+      - LOGGING=
+    depends_on:
+      - postgres-restore
+      - rope
+  nginx:
+    image: allthings/nginx
+    volumes:
+      - accounts_public:/srv/www/accounts/public:ro
+      - app_public:/srv/www/app/public:ro
+      - cockpit_public:/srv/www/cockpit/public:ro
+      - assets:/opt:ro
+    environment:
+      - NGINX_ENV=production
+      - SSL_PASS
+      - WAIT_FOR_FILES=/opt/mongorestore.html:/opt/postgres-restore.html
+      - WAIT_FOR_FILES_TIMEOUT=60
+    ports:
+      - 127.0.0.1:443:443
+      - ${SERVER_HOST:-127.0.0.1}:${SERVER_PORT-}:443
+    networks:
+      default:
+        aliases:
+          - api.dev.allthings.me
+          - app.dev.allthings.me
+          - cockpit.dev.allthings.me
+          - accounts.dev.allthings.me
+          - messagetemplates.dev.allthings.me
+          - static.dev.allthings.me
+          - assets.dev.allthings.me
+          - graphql.dev.allthings.me
+          - insights.dev.allthings.me
+    extra_hosts:
+      - developer-console:127.0.0.1
+    depends_on:
+      - api
+      - accounts
+      - app
+      - cockpit
+      - graphql
+      - insights
+  chromedriver:
+    image: allthings/chromedriver
+    init: true
+    tmpfs: /tmp
+    environment:
+      - ENABLE_VNC=true
+      - EXPOSE_X11=true
+    volumes:
+      - ./assets:/home/webdriver/assets:ro
+    extra_hosts:
+      - www.google-analytics.com:127.0.0.2
+      - cdn.mxpnl.com:127.0.0.2
+      - api.mixpanel.com:127.0.0.2
+    ports:
+      - 127.0.0.1:5900:5900
+  geckodriver:
+    image: allthings/geckodriver
+    init: true
+    tmpfs: /tmp
+    shm_size: 2g
+    environment:
+      - ENABLE_VNC=true
+      - EXPOSE_X11=true
+    volumes:
+      - ./assets:/home/webdriver/assets:ro
+    extra_hosts:
+      - www.google-analytics.com:127.0.0.2
+      - cdn.mxpnl.com:127.0.0.2
+      - api.mixpanel.com:127.0.0.2
+    ports:
+      - 127.0.0.1:5901:5900
+  wdio:
+    image: allthings/wdio
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /home/wdio/.android
+    environment:
+      - WAIT_FOR_HOSTS=
+          chromedriver:4444
+          geckodriver:4444
+          ${PROJECT:-app}.${ENVIRONMENT:-dev}.allthings.me:443
+      - WAIT_FOR_HOSTS_TIMEOUT=60
+      - WINDOWS_HOST
+      - ANDROID_SERIAL
+      - PLATFORM_VERSION
+      - DEVICE_NAME
+      - ORIENTATION
+      - MACOS_ASSETS_DIR=$PWD/assets/
+      - WINDOWS_ASSETS_DIR
+      - PROJECT
+      - ENVIRONMENT
+    volumes:
+      - .:/opt:ro
+      - ./reports:/opt/reports
+    depends_on:
+      - chromedriver
+      - geckodriver
+      - nginx

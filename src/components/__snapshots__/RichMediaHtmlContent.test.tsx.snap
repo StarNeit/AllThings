@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check RichMediaHtmlContent should apply css for injected html 1`] = `
+.css-0> ul,
+[data-css-0]> ul {
+  padding-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+.css-0 a,
+[data-css-0] a {
+  text-decoration: underline;
+}
+
+.css-0> p,
+[data-css-0]> p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+<Connect(SanitizedHtml)
+  config={
+    Object {
+      "ADD_ATTR": Array [
+        "target",
+      ],
+      "ADD_TAGS": Array [
+        "iframe",
+      ],
+      "FORBID_ATTR": Array [
+        "style",
+      ],
+      "FORBID_TAGS": Array [
+        "style",
+      ],
+    }
+  }
+  data-css-0=""
+  html="<ul><li>hi</li></ul><p>Test</p>"
+  localAnchors={true}
+>
+  <ForwardRef
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<ul><li>hi</li></ul><p>Test</p>",
+      }
+    }
+    data-css-0=""
+  >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<ul><li>hi</li></ul><p>Test</p>",
+        }
+      }
+      data-css-1=""
+      data-css-0=""
+    />
+  </ForwardRef>
+</Connect(SanitizedHtml)>
+`;

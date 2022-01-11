@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the CustomLogo component should fetch and retry again with a fallback 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+<div>
+  <div
+    data-css-0=""
+    style="fill: #fff; height: 32.5px; width: 32.5px;"
+  />
+</div>
+`;

@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the TitleBar component of the terms of use should render correctly for logged in users 1`] = `
+.css-0,
+[data-css-0] {
+  background: #1cabbb;
+  border-radius: 0;
+  cursor: auto;
+  height: 50px;
+}
+
+.css-1,
+[data-css-1] {
+  margin: 10px;
+  padding-top: 0px;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  cursor: pointer;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-3,
+[data-css-3] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+<ForwardRef
+  alignH="space-between"
+  alignV="center"
+  data-css-0=""
+  direction="row"
+  onClick={[Function]}
+>
+  <div
+    data-css-2=""
+    data-css-0=""
+    onClick={[Function]}
+  >
+    <ForwardRef
+      data-css-3=""
+      data-css-1=""
+    >
+      <div
+        data-css-3=""
+        data-css-1=""
+        data-css-4=""
+      >
+        A nice title
+      </div>
+    </ForwardRef>
+  </div>
+</ForwardRef>
+`;
+
+exports[`Check the TitleBar component of the terms of use should render correctly for non logged in users and handle going back 1`] = `
+.css-0,
+[data-css-0] {
+  margin: 10px;
+  padding-top: 0px;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  cursor: pointer;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-2,
+[data-css-2] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+.css-3,
+[data-css-3] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-4,
+[data-css-4] {
+  background: #1cabbb;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  height: 40px;
+}
+
+.css-5,
+[data-css-5] {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
+<ForwardRef
+  alignH="space-between"
+  alignV="center"
+  data-css-4=""
+  direction="row"
+  onClick={[MockFunction]}
+>
+  <div
+    data-css-1=""
+    data-css-4=""
+    onClick={[MockFunction]}
+  >
+    <ForwardRef
+      data-css-2=""
+      data-css-0=""
+    >
+      <div
+        data-css-2=""
+        data-css-0=""
+        data-css-3=""
+      >
+        A nice title
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignH="center"
+      alignV="center"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "",
+        }
+      }
+      data-css-5=""
+      data-css-0=""
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+        data-css-5=""
+        data-css-0=""
+        data-css-3=""
+      />
+    </ForwardRef>
+  </div>
+</ForwardRef>
+`;

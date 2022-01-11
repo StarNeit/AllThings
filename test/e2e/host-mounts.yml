@@ -1,0 +1,33 @@
+version: '2.2'
+volumes:
+  cockpit_public:
+  accounts_public:
+services:
+  mongorestore:
+    image: allthings/db-data
+  postgres-restore:
+    image: allthings/postgres-restore
+  rope:
+    image: allthings/rope
+  php:
+    image: allthings/php-prod
+  app:
+    image: allthings/app
+    volumes:
+      - ../..:/srv/www/app
+      # Use the build node_modules for the tests:
+      - ../../build/node_modules:/srv/www/app/node_modules
+  accounts:
+    image: allthings/accounts
+    volumes:
+      - accounts_public:/srv/www/accounts/public:ro
+  cockpit:
+    image: allthings/cockpit
+    volumes:
+      - cockpit_public:/srv/www/cockpit/public:ro
+  nginx:
+    image: allthings/nginx
+    volumes:
+      - cockpit_public:/srv/www/cockpit/public:ro
+      - accounts_public:/srv/www/accounts/public:ro
+      - ../../public:/srv/www/app/public:ro

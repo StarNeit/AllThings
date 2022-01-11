@@ -1,0 +1,18 @@
+127.0.0.1       localhost
+::1             ip6-localhost
+
+10.0.2.2        api.dev.allthings.me
+10.0.2.2        auth.dev.allthings.me
+10.0.2.2        accounts.dev.allthings.me
+10.0.2.2        app.dev.allthings.me
+10.0.2.2        cockpit.dev.allthings.me
+10.0.2.2        messagetemplates.dev.allthings.me
+10.0.2.2        static.dev.allthings.me
+10.0.2.2        assets.dev.allthings.me
+10.0.2.2        api-doc.dev.allthings.me
+10.0.2.2        admin.dev.allthings.me
+10.0.2.2        dynamodb.dev.allthings.me
+
+127.0.0.2        www.google-analytics.com
+127.0.0.2        cdn.mxpnl.com
+127.0.0.2        api.mixpanel.com

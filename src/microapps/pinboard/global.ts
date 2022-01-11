@@ -1,0 +1,2 @@
+export const COMMENT_FOLD_LEADING_COUNT = 2
+export const COMMENT_FOLD_TRAILING_COUNT = 2

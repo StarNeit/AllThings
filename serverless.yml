@@ -1,0 +1,609 @@
+service: ${self:custom.package.name}
+
+custom:
+  awsAccountId: ${env:AWS_ACCOUNT_ID, self:custom.package.config.awsAccountId}
+  defaultStage: development
+  defaultEnvironment: development
+  package: ${file(./package.json)}
+  staticAssetsUrl: https://s3-eu-west-1.amazonaws.com/${self:custom.package.config.${self:provider.stagePrefix}.publicS3Bucket}/${self:custom.package.name}/${self:provider.stage}
+  gatewayResponseTemplates: ${file(./src/ssr/deploy/gatewayResponseTemplates.js)}
+  versioning:
+    default: false
+    production: true
+    prerelease: false
+    staging: false
+  settings: ${file(./serverless-settings-${self:provider.stagePrefix}.yml):settings}
+  xrayTracingMode: Active
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${env:STAGE, self:custom.defaultStage}
+  stagePrefix: ${env:STAGE_PREFIX, self:custom.defaultStage}
+  region: eu-west-1
+  role: ${self:custom.settings.role}
+  deploymentBucket: ${self:custom.settings.deploymenBucket}
+  versionFunctions: ${self:custom.versioning.${self:provider.stagePrefix}, self:custom.versioning.default}
+  environment:
+    STAGE: ${self:provider.stage}
+    LOGGING: ${env:LOGGING, 'true'}
+    NODE_ENV: ${env:NODE_ENV, self:custom.defaultEnvironment}
+    CDN_HOST_URL: ${env:CDN_HOST_URL, self:custom.package.config.${self:provider.stagePrefix}.cdnHostUrl}
+    CDN_HOST_URL_PREFIX: ${self:provider.environment.CDN_HOST_URL}/${self:custom.package.name}/${self:provider.stage}
+  notificationArns:
+    - ${self:custom.settings.notificationArns}
+  stackTags:
+    deployedBy: ${env:DEPLOYED_BY}
+    deployTime: ${env:DEPLOY_TIME}
+    branchName: ${env:BRANCH_NAME}
+    commitHash: ${env:COMMIT_HASH}
+
+plugins:
+  - serverless-offline
+
+package:
+  excludeDevDependencies: false
+  include:
+    - '!./**'
+    # we include static/js so that we can map error call sites reported
+    # by the browser (in POST /client-errors route/handler) back to the source
+    - 'public/static/js/**'
+    - 'public/hold-on.html'
+    - 'public/unsupported.html'
+    - 'dist/**'
+
+functions:
+  ssr:
+    description: Server Side Rendering
+    memorySize: 1024
+    timeout: 30
+    handler: dist/handler-appRoot.default
+    events:
+      - schedule:
+          name: ${self:service}-${self:provider.stage}-keep-lambda-warm
+          description: Keeps the lambda function warm by invoking it on a schedule
+          rate: rate(5 minutes)
+      - http:
+          path: /
+          method: GET
+      - http:
+          path: /{route+}
+          method: GET
+
+  login-redirect:
+    description: Endpoint for initiating login flow without rendering landing page
+    memorySize: 128
+    timeout: 15
+    handler: dist/handler-loginRedirect.default
+    events:
+      - http:
+          path: /login-redirect
+          method: GET
+
+  manifest:
+    description: Endpoint for manifest file
+    memorySize: 128
+    timeout: 15
+    handler: dist/handler-manifest.default
+    events:
+      - http:
+          path: /manifest
+          method: GET
+
+  client-errors:
+    description: Endpoint for client error reports
+    memorySize: 128
+    timeout: 15
+    handler: dist/handler-clientErrors.default
+    events:
+      - http:
+          path: /client-errors
+          method: POST
+
+  connection-status:
+    description: Endpoint for client connection status check
+    memorySize: 128
+    timeout: 15
+    handler: dist/handler-connectionStatus.default
+    events:
+      - http:
+          path: /connection-status
+          method: GET
+
+  cookie-monster:
+    description: Endpoint to check if cookies are enabled
+    memorySize: 256
+    timeout: 15
+    handler: dist/handler-cookieMonster.default
+    events:
+      - http:
+          path: /cookie-monster
+          method: GET
+
+  csp-reports:
+    description: Endpoint where CSP violations get reported by the browser
+    memorySize: 128
+    timeout: 15
+    handler: dist/handler-cspReports.default
+    events:
+      - http:
+          path: /csp-reports
+          method: POST
+
+  unsupported:
+    description: Endpoint where unsupported browsers get redirected to
+    memorySize: 128
+    timeout: 15
+    handler: dist/handler-unsupported.default
+    events:
+      - http:
+          path: /unsupported
+          method: GET
+
+resources:
+  Conditions:
+    StageIsProductionCondition:
+      Fn::Equals:
+        - ${self:provider.stage}
+        - production
+  Resources:
+    ApiGatewayRestApi:
+      Properties:
+        BinaryMediaTypes:
+          - '*/*'
+          # - "*~1*" # slash / is escaped as ~1 cuz, you know, AWS.
+
+    # /oauth root resource (used by /oauth/token)
+    OauthEndpointRootResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Fn::GetAtt:
+            - ApiGatewayRestApi
+            - RootResourceId
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: oauth
+
+    # /oauth/token resource
+    OauthTokenEndpointResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Ref: OauthEndpointRootResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: token
+
+    # POST /oauth/token integration method
+    PostOauthTokenEndpointProxyMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: OauthTokenEndpointResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: POST
+        Integration:
+          Type: AWS_PROXY
+          IntegrationHttpMethod: POST
+          Uri:
+            Fn::Join:
+              - ''
+              - - 'arn:aws:apigateway:'
+                - Ref: AWS::Region
+                - :lambda:path/2015-03-31/functions/
+                - Fn::ImportValue: accounts:${self:provider.stage}:TokenPostLambdaArn
+                - /invocations
+
+    OptionsOauthTokenEndpointProxyMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        ResourceId:
+          Ref: OauthTokenEndpointResource
+        AuthorizationType: NONE
+        HttpMethod: OPTIONS
+        Integration:
+          IntegrationResponses:
+            - StatusCode: 200
+              ResponseParameters:
+                method.response.header.Access-Control-Allow-Headers: "'Content-Type,User-Agent'"
+                method.response.header.Access-Control-Allow-Methods: "'POST,OPTIONS'"
+                method.response.header.Access-Control-Allow-Origin: "'*'"
+              ResponseTemplates:
+                application/json: ''
+          PassthroughBehavior: WHEN_NO_MATCH
+          RequestTemplates:
+            application/json: '{"statusCode": 200}'
+          Type: MOCK
+          ContentHandling: CONVERT_TO_TEXT
+        MethodResponses:
+          - StatusCode: 200
+            ResponseModels:
+              application/json: 'Empty'
+            ResponseParameters:
+              method.response.header.Access-Control-Allow-Headers: false
+              method.response.header.Access-Control-Allow-Methods: false
+              method.response.header.Access-Control-Allow-Origin: false
+
+    # /auth root resource (used by /oauth/token)
+    AuthEndpointProxyRootResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Fn::GetAtt:
+            - ApiGatewayRestApi
+            - RootResourceId
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: auth
+
+    AuthEndpointProxyVarResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Ref: AuthEndpointProxyRootResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: '{proxy+}'
+
+    # /auth/authorize     resource
+    AuthAuthorizeEndpointResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Ref: AuthEndpointProxyRootResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: authorize
+
+    # /auth/token resource
+    AuthTokenEndpointResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Ref: AuthEndpointProxyRootResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: token
+
+    # GET /auth/authorize integration method
+    GetAuthAuthorizeEndpointProxyMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: AuthAuthorizeEndpointResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: GET
+        Integration:
+          Type: AWS_PROXY
+          IntegrationHttpMethod: POST
+          Uri:
+            Fn::Join:
+              - ''
+              - - 'arn:aws:apigateway:'
+                - Ref: AWS::Region
+                - :lambda:path/2015-03-31/functions/
+                - 'arn:aws:lambda:'
+                - ${self:provider.region}
+                - ':'
+                - ${self:custom.awsAccountId}
+                - ':function:'
+                - ${self:service}-${self:provider.stage}-ssr
+                - /invocations
+
+    # POST /auth/token integration method
+    PostAuthTokenEndpointProxyMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: AuthTokenEndpointResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: POST
+        Integration:
+          Type: AWS_PROXY
+          IntegrationHttpMethod: POST
+          Uri:
+            Fn::Join:
+              - ''
+              - - 'arn:aws:apigateway:'
+                - Ref: AWS::Region
+                - :lambda:path/2015-03-31/functions/
+                - Fn::ImportValue: accounts:${self:provider.stage}:TokenPostLambdaArn
+                - /invocations
+
+    OptionsAuthTokenEndpointProxyMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        ResourceId:
+          Ref: AuthTokenEndpointResource
+        AuthorizationType: NONE
+        HttpMethod: OPTIONS
+        Integration:
+          IntegrationResponses:
+            - StatusCode: 200
+              ResponseParameters:
+                method.response.header.Access-Control-Allow-Headers: "'Content-Type,User-Agent'"
+                method.response.header.Access-Control-Allow-Methods: "'POST,OPTIONS'"
+                method.response.header.Access-Control-Allow-Origin: "'*'"
+              ResponseTemplates:
+                application/json: ''
+          PassthroughBehavior: WHEN_NO_MATCH
+          RequestTemplates:
+            application/json: '{"statusCode": 200}'
+          Type: MOCK
+          ContentHandling: CONVERT_TO_TEXT
+        MethodResponses:
+          - StatusCode: 200
+            ResponseModels:
+              application/json: 'Empty'
+            ResponseParameters:
+              method.response.header.Access-Control-Allow-Headers: false
+              method.response.header.Access-Control-Allow-Methods: false
+              method.response.header.Access-Control-Allow-Origin: false
+
+    # ANY /auth/{proxy+}
+    AuthEndpointProxyMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: AuthEndpointProxyVarResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: ANY
+        RequestParameters:
+          method.request.path.proxy: true
+        Integration:
+          Type: HTTP_PROXY
+          IntegrationHttpMethod: ANY
+          Uri:
+            Fn::Join:
+              - ''
+              - - https://auth.
+                - Fn::If:
+                    - StageIsProductionCondition
+                    - ''
+                    - ${self:provider.stage}.
+                - allthings.me/auth/{proxy}
+          RequestParameters:
+            integration.request.path.proxy: method.request.path.proxy
+
+    # /accounts root resource (used by /accounts/graphql)
+    AccountsEndpointRootResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Fn::GetAtt:
+            - ApiGatewayRestApi
+            - RootResourceId
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: accounts
+
+    # /accounts/graphql resource
+    AccountsGraphqlEndpointResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Ref: AccountsEndpointRootResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: graphql
+
+    # ANY /accounts/graphql integration method
+    AnyAccountsGraphqlEndpointProxyMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: AccountsGraphqlEndpointResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: ANY
+        Integration:
+          Type: AWS_PROXY
+          IntegrationHttpMethod: ANY
+          Uri:
+            Fn::Join:
+              - ''
+              - - 'arn:aws:apigateway:'
+                - Ref: AWS::Region
+                - :lambda:path/2015-03-31/functions/
+                - Fn::ImportValue: accounts:${self:provider.stage}:GraphqlLambdaArn
+                - /invocations
+
+    # GET /favico.ico
+    FaviconResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Fn::GetAtt:
+            - ApiGatewayRestApi
+            - RootResourceId
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: favicon.ico
+    FaviconMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: FaviconResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: GET
+        Integration:
+          Type: HTTP_PROXY
+          IntegrationHttpMethod: GET
+          Uri: ${self:custom.staticAssetsUrl}/favicon.ico
+
+    # GET /demo.html
+    DemoHtmlResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Fn::GetAtt:
+            - ApiGatewayRestApi
+            - RootResourceId
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: demo.html
+    DemoHtmlMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: DemoHtmlResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: GET
+        Integration:
+          Type: HTTP_PROXY
+          IntegrationHttpMethod: GET
+          Uri: ${self:custom.staticAssetsUrl}/demo.html
+
+    # /.well-known root resource (used by /.well-known/assetlinks.json)
+    WellKnownRootResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Fn::GetAtt:
+            - ApiGatewayRestApi
+            - RootResourceId
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: .well-known
+
+    # GET /.well-known/assetlinks.json (Android Deeplinking)
+    AssetLinksJsonResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Ref: WellKnownRootResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: assetlinks.json
+    AssetLinksJsonMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: AssetLinksJsonResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: GET
+        Integration:
+          Type: HTTP_PROXY
+          IntegrationHttpMethod: GET
+          Uri: ${self:custom.staticAssetsUrl}/well-known-assetlinks.json
+
+    # GET /.well-known/apple-app-site-association (iOS Deeplinking)
+    AppleAppSiteAssociationResource:
+      Type: AWS::ApiGateway::Resource
+      Properties:
+        ParentId:
+          Ref: WellKnownRootResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        PathPart: apple-app-site-association
+    AppleAppSiteAssociationMethod:
+      Type: AWS::ApiGateway::Method
+      Properties:
+        ResourceId:
+          Ref: AppleAppSiteAssociationResource
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        AuthorizationType: NONE
+        HttpMethod: GET
+        Integration:
+          Type: HTTP
+          IntegrationHttpMethod: GET
+          Uri: ${self:custom.staticAssetsUrl}/apple-app-site-association
+          IntegrationResponses:
+            - StatusCode: 200
+              ResponseParameters:
+                method.response.header.Content-Type: "'application/json'"
+        MethodResponses:
+          - StatusCode: 200
+            ResponseParameters:
+              method.response.header.Content-Type: true
+
+    # Default 500 Error Gateway Response
+    Default500GatewayResponse:
+      Type: AWS::ApiGateway::GatewayResponse
+      Properties:
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        ResponseType: DEFAULT_5XX
+        ResponseTemplates: ${self:custom.gatewayResponseTemplates.DEFAULT_5XX}
+
+    # Enable X-Ray tracing on Lambda functions
+    SsrLambdaFunction:
+      Properties:
+        TracingConfig:
+          Mode: ${self:custom.xrayTracingMode}
+    ClientDasherrorsLambdaFunction:
+      Properties:
+        TracingConfig:
+          Mode: ${self:custom.xrayTracingMode}
+    ConnectionDashstatusLambdaFunction:
+      Properties:
+        TracingConfig:
+          Mode: ${self:custom.xrayTracingMode}
+    CookieDashmonsterLambdaFunction:
+      Properties:
+        TracingConfig:
+          Mode: ${self:custom.xrayTracingMode}
+    CspDashreportsLambdaFunction:
+      Properties:
+        TracingConfig:
+          Mode: ${self:custom.xrayTracingMode}
+
+    # Limit CloudWatch log retention to 3 months
+    # Under the EU GDPR (General Data Protection Regulation) we’re not allowed to
+    # collect any personal data without consent. There are exceptions for security
+    # and audit reasons, ours being that we keep it for audit reasons.
+    SsrLogGroup:
+      Type: AWS::Logs::LogGroup
+      Properties:
+        RetentionInDays: 90
+    ClientDasherrorsLogGroup:
+      Type: AWS::Logs::LogGroup
+      Properties:
+        RetentionInDays: 90
+    ConnectionDashstatusLogGroup:
+      Type: AWS::Logs::LogGroup
+      Properties:
+        RetentionInDays: 90
+    CookieDashmonsterLogGroup:
+      Type: AWS::Logs::LogGroup
+      Properties:
+        RetentionInDays: 90
+    CspDashreportsLogGroup:
+      Type: AWS::Logs::LogGroup
+      Properties:
+        RetentionInDays: 90
+    UnsupportedLogGroup:
+      Type: AWS::Logs::LogGroup
+      Properties:
+        RetentionInDays: 90
+
+  # Outputs which get used in other CloudFormation Stacks
+  Outputs:
+    # Used in the Accounts service to grant App permissions to invoke Account Lambda functions
+    ApiGatewayRestApiId:
+      Description: "The ID of the service's Rest API in API Gateway"
+      Value:
+        Ref: ApiGatewayRestApi
+      Export:
+        Name: ${self:service}:${self:provider.stage}:ApiGatewayRestApiId

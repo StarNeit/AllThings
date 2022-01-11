@@ -1,0 +1,712 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the account login view should not render the loginMessage if missing 1`] = `
+.css-0,
+[data-css-0] {
+  display: inline;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.css-1,
+[data-css-1] {
+  width: 100%;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-3,
+[data-css-3] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-4,
+[data-css-4] {
+  position: relative;
+  padding: 10px 16px;
+  border-radius: 2px;
+  border: none;
+  user-select: none;
+  outline: none;
+  color: white;
+  background: #3598db;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: 250ms ease-in-out;
+  -moz-transition: 250ms ease-in-out;
+}
+
+.css-4:focus,
+[data-css-4]:focus {
+  outline: none;
+}
+
+.css-4:hover,
+[data-css-4]:hover {
+  color: white;
+  background: #227dbf;
+}
+
+.css-7,
+[data-css-7] {
+  width: 10px;
+  height: 10px;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-9,
+[data-css-9] {
+  position: relative;
+  padding: 10px 16px;
+  border-radius: 2px;
+  border: none;
+  user-select: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  margin: 2px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: 250ms ease-in-out;
+  -moz-transition: 250ms ease-in-out;
+}
+
+.css-9:focus,
+[data-css-9]:focus {
+  outline: none;
+}
+
+.css-9:hover,
+[data-css-9]:hover {
+  color: #cccccc;
+}
+
+.css-12,
+[data-css-12] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3598db;
+}
+
+<Connect(withRouter(AccountsLoginView))>
+  <ForwardRef
+    alignH="center"
+    alignV="center"
+    direction="column"
+  >
+    <div
+      data-css-2=""
+    >
+      <ForwardRef
+        alignH="center"
+        alignV="center"
+        data-css-1=""
+        direction="row"
+      >
+        <div
+          data-css-3=""
+          data-css-1=""
+        >
+          <button
+            data-css-0=""
+            data-css-4=""
+            data-e2e="login-accounts-button"
+            data-e2e-active-locale="en_US"
+            name="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+            type="button"
+          >
+            <span>
+              Login
+            </span>
+          </button>
+          <ForwardRef
+            data-css-7=""
+          >
+            <div
+              data-css-8=""
+              data-css-7=""
+            />
+          </ForwardRef>
+          <button
+            data-css-0=""
+            data-css-9=""
+            data-e2e="register-accounts-button"
+            name="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "border": "1px solid #3598db",
+                "width": "100%",
+              }
+            }
+            type="button"
+          >
+            <ForwardRef
+              data-css-12=""
+            >
+              <div
+                data-css-12=""
+                data-css-8=""
+              >
+                <span>
+                  Register
+                </span>
+              </div>
+            </ForwardRef>
+          </button>
+        </div>
+      </ForwardRef>
+    </div>
+  </ForwardRef>
+</Connect(withRouter(AccountsLoginView))>
+`;
+
+exports[`Check the account login view should render differently if loading 1`] = `
+.css-0,
+[data-css-0] {
+  display: inline;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.css-1,
+[data-css-1] {
+  width: 100%;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-3,
+[data-css-3] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-4,
+[data-css-4] {
+  position: relative;
+  padding: 10px 16px;
+  border-radius: 2px;
+  border: none;
+  user-select: none;
+  outline: none;
+  color: white;
+  background: #3598db;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: 250ms ease-in-out;
+  -moz-transition: 250ms ease-in-out;
+}
+
+.css-4:focus,
+[data-css-4]:focus {
+  outline: none;
+}
+
+.css-4:hover,
+[data-css-4]:hover {
+  color: white;
+  background: #227dbf;
+}
+
+.css-7,
+[data-css-7] {
+  width: 10px;
+  height: 10px;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-9,
+[data-css-9] {
+  position: relative;
+  padding: 10px 16px;
+  border-radius: 2px;
+  border: none;
+  user-select: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  margin: 2px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: 250ms ease-in-out;
+  -moz-transition: 250ms ease-in-out;
+}
+
+.css-9:focus,
+[data-css-9]:focus {
+  outline: none;
+}
+
+.css-9:hover,
+[data-css-9]:hover {
+  color: #cccccc;
+}
+
+.css-12,
+[data-css-12] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3598db;
+}
+
+<Connect(withRouter(AccountsLoginView))>
+  <ForwardRef
+    alignH="center"
+    alignV="center"
+    direction="column"
+  >
+    <div
+      data-css-2=""
+    >
+      <ForwardRef
+        alignH="center"
+        alignV="center"
+        data-css-1=""
+        direction="row"
+      >
+        <div
+          data-css-3=""
+          data-css-1=""
+        >
+          <button
+            data-css-0=""
+            data-css-4=""
+            data-e2e="login-accounts-button"
+            data-e2e-active-locale="en_US"
+            name="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+            type="button"
+          >
+            <span>
+              Login
+            </span>
+          </button>
+          <ForwardRef
+            data-css-7=""
+          >
+            <div
+              data-css-8=""
+              data-css-7=""
+            />
+          </ForwardRef>
+          <button
+            data-css-0=""
+            data-css-9=""
+            data-e2e="register-accounts-button"
+            name="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "border": "1px solid #3598db",
+                "width": "100%",
+              }
+            }
+            type="button"
+          >
+            <ForwardRef
+              data-css-12=""
+            >
+              <div
+                data-css-12=""
+                data-css-8=""
+              >
+                <span>
+                  Register
+                </span>
+              </div>
+            </ForwardRef>
+          </button>
+        </div>
+      </ForwardRef>
+    </div>
+  </ForwardRef>
+</Connect(withRouter(AccountsLoginView))>
+`;
+
+exports[`Check the account login view should render the loginMessage if present 1`] = `
+.css-0,
+[data-css-0] {
+  display: inline;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.css-1,
+[data-css-1] {
+  width: 100%;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-3,
+[data-css-3] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-4,
+[data-css-4] {
+  position: relative;
+  padding: 10px 16px;
+  border-radius: 2px;
+  border: none;
+  user-select: none;
+  outline: none;
+  color: white;
+  background: #3598db;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: 250ms ease-in-out;
+  -moz-transition: 250ms ease-in-out;
+}
+
+.css-4:focus,
+[data-css-4]:focus {
+  outline: none;
+}
+
+.css-4:hover,
+[data-css-4]:hover {
+  color: white;
+  background: #227dbf;
+}
+
+.css-7,
+[data-css-7] {
+  width: 10px;
+  height: 10px;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-9,
+[data-css-9] {
+  position: relative;
+  padding: 10px 16px;
+  border-radius: 2px;
+  border: none;
+  user-select: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  margin: 2px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: 250ms ease-in-out;
+  -moz-transition: 250ms ease-in-out;
+}
+
+.css-9:focus,
+[data-css-9]:focus {
+  outline: none;
+}
+
+.css-9:hover,
+[data-css-9]:hover {
+  color: #cccccc;
+}
+
+.css-12,
+[data-css-12] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3598db;
+}
+
+.css-13,
+[data-css-13] {
+  padding-top: 10px;
+}
+
+.css-14,
+[data-css-14] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #7e8c8d;
+}
+
+<Connect(withRouter(AccountsLoginView))>
+  <ForwardRef
+    alignH="center"
+    alignV="center"
+    direction="column"
+  >
+    <div
+      data-css-2=""
+    >
+      <ForwardRef
+        alignH="center"
+        alignV="center"
+        data-css-1=""
+        direction="row"
+      >
+        <div
+          data-css-3=""
+          data-css-1=""
+        >
+          <button
+            data-css-0=""
+            data-css-4=""
+            data-e2e="login-accounts-button"
+            data-e2e-active-locale="en_US"
+            name="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+            type="button"
+          >
+            <span>
+              Login
+            </span>
+          </button>
+          <ForwardRef
+            data-css-7=""
+          >
+            <div
+              data-css-8=""
+              data-css-7=""
+            />
+          </ForwardRef>
+          <button
+            data-css-0=""
+            data-css-9=""
+            data-e2e="register-accounts-button"
+            name="button"
+            onClick={[Function]}
+            style={
+              Object {
+                "border": "1px solid #3598db",
+                "width": "100%",
+              }
+            }
+            type="button"
+          >
+            <ForwardRef
+              data-css-12=""
+            >
+              <div
+                data-css-12=""
+                data-css-8=""
+              >
+                <span>
+                  Register
+                </span>
+              </div>
+            </ForwardRef>
+          </button>
+        </div>
+      </ForwardRef>
+      <ForwardRef
+        data-css-13=""
+        data-css-14=""
+        data-e2e="login-message"
+      >
+        <div
+          data-css-13=""
+          data-css-8=""
+          data-css-14=""
+          data-e2e="login-message"
+        >
+          foo
+        </div>
+      </ForwardRef>
+    </div>
+  </ForwardRef>
+</Connect(withRouter(AccountsLoginView))>
+`;

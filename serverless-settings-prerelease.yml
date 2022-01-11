@@ -1,0 +1,4 @@
+settings:
+  deploymenBucket: ${cf:prerelease-as3.LambdaDeploymentsBucket}
+  notificationArns: ${cf:prerelease-sns.ServerlessEventsTopic}
+  role: ${cf:prerelease-iam.LambdaBasicExecutionRole}

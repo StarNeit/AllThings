@@ -1,0 +1,1121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServiceChooser renders ServiceChooser without errors 1`] = `
+.css-0,
+[data-css-0] {
+  position: relative;
+}
+
+.css-1,
+[data-css-1] {
+  margin-left: 10px;
+  width: calc(100% - 70px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.css-2,
+[data-css-2] {
+  padding: 5px 10px;
+}
+
+.css-3,
+[data-css-3] {
+  -webkit-overflow-scrolling: touch;
+  width: 285px;
+  color: #fff;
+  overflow: auto;
+  overflow-x: hidden;
+  background: #3598db;
+  height: 100%;
+  border-right: 1px solid rgba(0,0,0,0.05);
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-5,
+[data-css-5] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-6,
+[data-css-6] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-7,
+[data-css-7] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-9,
+[data-css-9] {
+  border-right: 1px solid rgba(126, 140, 141, 0.2);
+  margin-right: -1px;
+  cursor: pointer;
+}
+
+.css-9:hover,
+[data-css-9]:hover {
+  background-color: rgba(53, 152, 219, 1);
+}
+
+.css-11,
+[data-css-11] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 1;
+}
+
+.css-12,
+[data-css-12] {
+  width: 21.5px;
+  height: 21.5px;
+  stroke: #ffffff;
+}
+
+.css-13,
+[data-css-13] {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+}
+
+.css-14,
+[data-css-14] {
+  background-color: #e84c3d;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  transition: background-color 120ms linear;
+  -webkit-transition: background-color 120ms linear;
+  -moz-transition: background-color 120ms linear;
+}
+
+.css-15,
+[data-css-15] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-16,
+[data-css-16] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.css-17,
+[data-css-17] {
+  width: 21.5px;
+  height: 21.5px;
+  fill: #ffffff;
+}
+
+.css-18,
+[data-css-18] {
+  cursor: pointer;
+  margin: 3px 10px;
+  border-radius: 2px;
+}
+
+.css-18:hover,
+[data-css-18]:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.css-18:hover> div:nth-child(2),
+[data-css-18]:hover> div:nth-child(2) {
+  color: #297fb8;
+}
+
+.css-18> div:nth-child(2),
+[data-css-18]> div:nth-child(2) {
+  margin-left: 16px;
+}
+
+.css-20,
+[data-css-20] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  cursor: pointer;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-21,
+[data-css-21] {
+  height: 50px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #297fb8;
+}
+
+.css-22,
+[data-css-22] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-23,
+[data-css-23] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+.css-24,
+[data-css-24] {
+  cursor: pointer;
+  margin: 3px 10px;
+  border-radius: 2px;
+}
+
+.css-24:hover,
+[data-css-24]:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.css-24> div:nth-child(2),
+[data-css-24]> div:nth-child(2) {
+  margin-left: 16px;
+}
+
+.css-26,
+[data-css-26] {
+  height: 50px;
+  width: 50px;
+  border-radius: 2px;
+}
+
+.css-27,
+[data-css-27] {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+  width: 100%;
+}
+
+.css-28,
+[data-css-28] {
+  cursor: pointer;
+  margin: 3px 10px;
+  border-radius: 2px;
+}
+
+.css-28:hover,
+[data-css-28]:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.css-28:hover> div:nth-child(2),
+[data-css-28]:hover> div:nth-child(2) {
+  color: contrast;
+}
+
+.css-28> div:nth-child(2),
+[data-css-28]> div:nth-child(2) {
+  margin-left: 16px;
+}
+
+.css-30,
+[data-css-30] {
+  height: 50px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: contrast;
+}
+
+.css-31,
+[data-css-31] {
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+.css-31:hover,
+[data-css-31]:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.css-33,
+[data-css-33] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+@media (max-width: 640px), (min-width: 641px) and (max-width: 1024px) {
+  .css-3,
+  [data-css-3] {
+    position: absolute;
+    width: calc(100vw - 60px);
+    top: 0;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.8);
+    z-index: 3;
+    transform: translate3d(0, 0, 0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .css-3,
+  [data-css-3] {
+    width: 285px;
+    transform: translate3d(0px, 0, 0);
+    -webkit-transform: translate3d(0px, 0, 0);
+  }
+}
+
+@media (max-width: 640px), (min-width: 641px) and (max-width: 1024px) {
+  .css-c3vf88,
+  [data-css-c3vf88] {
+    display: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .css-21,
+  [data-css-21] {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .css-26,
+  [data-css-26] {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .css-30,
+  [data-css-30] {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+<ForwardRef
+  alignV="stretch"
+  data-css-3=""
+  direction="column"
+  onTransitionEnd={[Function]}
+  style={
+    Object {
+      "transition": ".35s ease-in-out",
+    }
+  }
+>
+  <div
+    data-css-4=""
+    data-css-3=""
+    onTransitionEnd={[Function]}
+    style={
+      Object {
+        "transition": ".35s ease-in-out",
+      }
+    }
+  >
+    <ForwardRef
+      alignV="center"
+      direction="row"
+      style={
+        Object {
+          "backgroundColor": "#2383c7",
+          "height": 65,
+          "padding": "0 18px",
+        }
+      }
+    >
+      <div
+        data-css-5=""
+        style={
+          Object {
+            "backgroundColor": "#2383c7",
+            "height": 65,
+            "padding": "0 18px",
+          }
+        }
+      >
+        <Connect(Logo)
+          color="#ffffff"
+          size={30}
+          style={
+            Object {
+              "flexShrink": 0,
+              "maxHeight": "29px",
+              "maxWidth": "65px",
+            }
+          }
+        >
+          <svg
+            data-e2e="service-chooser-opener"
+            height="187px"
+            style={
+              Object {
+                "cursor": "pointer",
+                "flexShrink": 0,
+                "height": "45px",
+                "maxHeight": "29px",
+                "maxWidth": "65px",
+                "width": "45px",
+              }
+            }
+            viewBox="0 0 219 187"
+            width="219px"
+          >
+            <g
+              fill="none"
+              fillRule="evenodd"
+              stroke="none"
+              strokeWidth="1"
+            >
+              <g
+                fill="#ffffff"
+                transform="translate(-151.000000, -302.000000)"
+              >
+                <g
+                  transform="translate(151.000000, 302.000000)"
+                >
+                  <path
+                    d="M131.1,19.1 L123.4,6 L123.4,6 C121.2,1.8 118.1,1.8 115.6,1.8 L99.7,1.8 C97.3,1.8 95.8,4.4 97,6.5 L104.8,19.7 C107,23.7 110,23.8 112.5,23.8 L128.4,23.8 C130.8,23.8 132.3,21.2 131.1,19.1 L131.1,19.1 Z"
+                    id="XMLID_109_"
+                  />
+                  <path
+                    d="M172.5,19.1 L164.8,6 L164.8,6 C162.6,1.8 159.5,1.8 157,1.8 L141.1,1.8 C138.7,1.8 137.2,4.4 138.4,6.5 L146.2,19.7 C148.4,23.7 151.4,23.8 153.9,23.8 L169.8,23.8 C172.2,23.8 173.7,21.2 172.5,19.1 L172.5,19.1 Z"
+                    id="XMLID_108_"
+                  />
+                  <path
+                    d="M194,56 L186.3,42.9 L186.3,42.9 C184.1,38.7 181,38.7 178.5,38.7 L162.6,38.7 C160.2,38.7 158.7,41.3 159.9,43.4 L167.7,56.6 C169.9,60.6 172.9,60.7 175.4,60.7 L191.3,60.7 C193.7,60.7 195.2,58.1 194,56 L194,56 Z"
+                    id="XMLID_107_"
+                  />
+                  <path
+                    d="M152.6,56 L144.9,42.9 L144.9,42.9 C142.7,38.7 139.6,38.7 137.1,38.7 L121.2,38.7 C118.8,38.7 117.3,41.3 118.5,43.4 L126.3,56.6 C128.5,60.6 131.5,60.7 134,60.7 L149.9,60.7 C152.3,60.7 153.8,58.1 152.6,56 L152.6,56 Z"
+                    id="XMLID_106_"
+                  />
+                  <path
+                    d="M111.8,56 L104.1,42.9 L104.1,42.9 C101.9,38.7 98.8,38.7 96.3,38.7 L80.4,38.7 C78,38.7 76.5,41.3 77.7,43.4 L85.5,56.6 C87.7,60.6 90.7,60.7 93.2,60.7 L109.1,60.7 C111.5,60.7 113,58.1 111.8,56 L111.8,56 Z"
+                    id="XMLID_105_"
+                  />
+                  <path
+                    d="M174.1,92.9 L166.4,79.8 L166.4,79.8 C164.2,75.6 161.1,75.6 158.6,75.6 L142.7,75.6 C140.3,75.6 138.8,78.2 140,80.3 L147.8,93.5 C150,97.5 153,97.6 155.5,97.6 L171.4,97.6 C173.8,97.6 175.3,95 174.1,92.9 L174.1,92.9 Z"
+                    id="XMLID_104_"
+                  />
+                  <path
+                    d="M133.3,92.9 L125.6,79.8 L125.6,79.8 C123.4,75.6 120.3,75.6 117.8,75.6 L101.9,75.6 C99.5,75.6 98,78.2 99.2,80.3 L107,93.5 C109.2,97.5 112.2,97.6 114.7,97.6 L130.6,97.6 C133,97.6 134.5,95 133.3,92.9 L133.3,92.9 Z"
+                    id="XMLID_103_"
+                  />
+                  <path
+                    d="M90.7,19.7 L82.3,5.4 L82.2,5.3 L90.7,19.7 C90.7,19.8 90.7,19.7 90.7,19.7 L90.7,19.7 Z"
+                    id="XMLID_102_"
+                  />
+                  <path
+                    d="M179.1,80.8 L179.6,81.7 L179.1,80.8 C179.1,80.7 179.1,80.7 179.1,80.8 L179.1,80.8 Z"
+                    id="XMLID_101_"
+                  />
+                  <path
+                    d="M217.3,96.6 L216.8,95.7 L206.9,78.6 C205.3,76.6 203.5,75.9 201.7,75.7 L181.6,75.7 C181.4,75.7 181.2,75.7 181,75.8 C179.1,76.4 178,78.7 179.1,80.7 L179.7,81.7 L189.5,98.8 C190.1,99.8 190,101 189.5,102 L154.3,160.3 C153.7,161.2 152.7,161.8 151.6,161.8 L75,161.8 C73.9,161.8 72.9,161.2 72.3,160.3 L29.1,86.3 C28.5,85.3 28.5,84.1 29.1,83.1 L63.7,26.5 C64.3,25.6 65.3,25 66.4,25 L70.4,25 L87.8,25 C90.4,25 92,22.2 90.8,19.9 L82.3,5.4 C79.9,0.9 76.6,0.9 73.8,0.9 L56.4,0.9 L52.3,0.9 C51.2,0.9 50.2,1.5 49.6,2.4 L2.5,79.4 C3.28626015e-14,83.6 0.2,86.2 2,89.2 L56.3,182 C58.5,185.7 60.7,186.4 62.6,186.5 L64.6,186.5 L161.6,186.5 C166.4,186.5 167.7,185.5 169.8,182.2 L216.9,104.4 L216.9,104.4 C218.6,101.6 219.2,100 217.3,96.6 L217.3,96.6 Z"
+                    id="XMLID_100_"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </Connect(Logo)>
+        <ForwardRef
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "height": 20,
+              "margin": 10,
+              "opacity": 0.25,
+              "width": 1,
+            }
+          }
+        >
+          <div
+            data-css-6=""
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "height": 20,
+                "margin": 10,
+                "opacity": 0.25,
+                "width": 1,
+              }
+            }
+          />
+        </ForwardRef>
+        <ForwardRef
+          direction="column"
+        >
+          <div
+            data-css-4=""
+          >
+            <ForwardRef
+              data-css-7=""
+            >
+              <div
+                data-css-7=""
+                data-css-6=""
+              >
+                title
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      data-css-c3vf88=""
+    >
+      <div
+        data-css-6=""
+        data-css-c3vf88=""
+      >
+        <ForwardRef
+          alignV="stretch"
+          direction="row"
+          style={
+            Object {
+              "backgroundColor": "#268ed9",
+              "height": 50,
+              "marginBottom": 5,
+            }
+          }
+        >
+          <div
+            data-css-8=""
+            style={
+              Object {
+                "backgroundColor": "#268ed9",
+                "height": 50,
+                "marginBottom": 5,
+              }
+            }
+          >
+            <ForwardRef
+              alignH="center"
+              alignV="center"
+              data-css-9=""
+              data-e2e="notifications-button"
+              direction="column"
+              flex="flex"
+              onClick={[Function]}
+            >
+              <div
+                data-css-9=""
+                data-css-11=""
+                data-e2e="notifications-button"
+                onClick={[Function]}
+              >
+                <ForwardRef
+                  data-css-0=""
+                >
+                  <div
+                    data-css-0=""
+                    data-css-6=""
+                  >
+                    <ForwardRef
+                      alignH="center"
+                      alignV="center"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "",
+                        }
+                      }
+                      data-css-12=""
+                    >
+                      <div
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "",
+                          }
+                        }
+                        data-css-12=""
+                        data-css-6=""
+                      />
+                    </ForwardRef>
+                    <ForwardRef
+                      data-css-13=""
+                      data-e2e="new-notifications"
+                    >
+                      <div
+                        data-css-6=""
+                        data-css-13=""
+                        data-e2e="new-notifications"
+                      >
+                        <ForwardRef
+                          alignH="center"
+                          alignV="center"
+                          data-css-14=""
+                          direction="column"
+                        >
+                          <div
+                            data-css-14=""
+                            data-css-15=""
+                          >
+                            <ForwardRef
+                              data-css-16=""
+                            >
+                              <div
+                                data-css-6=""
+                                data-css-16=""
+                              >
+                                5
+                              </div>
+                            </ForwardRef>
+                          </div>
+                        </ForwardRef>
+                      </div>
+                    </ForwardRef>
+                  </div>
+                </ForwardRef>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              alignH="center"
+              alignV="center"
+              data-css-9=""
+              data-e2e="compose-button"
+              direction="column"
+              flex="flex"
+              onClick={[Function]}
+            >
+              <div
+                data-css-9=""
+                data-css-11=""
+                data-e2e="compose-button"
+                onClick={[Function]}
+              >
+                <ForwardRef
+                  data-css-0=""
+                >
+                  <div
+                    data-css-0=""
+                    data-css-6=""
+                  >
+                    <ForwardRef
+                      alignH="center"
+                      alignV="center"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "",
+                        }
+                      }
+                      data-css-17=""
+                    >
+                      <div
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "",
+                          }
+                        }
+                        data-css-17=""
+                        data-css-6=""
+                      />
+                    </ForwardRef>
+                  </div>
+                </ForwardRef>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-18=""
+      data-e2e="service-chooser-microapp-craftspeople-inactive"
+      direction="row"
+      onClick={[Function]}
+    >
+      <div
+        data-css-18=""
+        data-css-20=""
+        data-e2e="service-chooser-microapp-craftspeople-inactive"
+        onClick={[Function]}
+      >
+        <ForwardRef
+          alignH="center"
+          alignV="center"
+          data-css-21=""
+          direction="row"
+        >
+          <div
+            data-css-21=""
+            data-css-22=""
+          >
+            <ForwardRef
+              alignH="center"
+              alignV="center"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "",
+                }
+              }
+              data-css-17=""
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "",
+                  }
+                }
+                data-css-17=""
+                data-css-6=""
+              />
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+        <ForwardRef
+          data-css-23=""
+          data-css-1=""
+        >
+          <div
+            data-css-23=""
+            data-css-6=""
+            data-css-1=""
+          >
+            cp
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-24=""
+      data-e2e="service-chooser-microapp-clipboard-inactive"
+      direction="row"
+      onClick={[Function]}
+    >
+      <div
+        data-css-24=""
+        data-css-20=""
+        data-e2e="service-chooser-microapp-clipboard-inactive"
+        onClick={[Function]}
+      >
+        <ForwardRef
+          alignH="center"
+          alignV="center"
+          data-css-26=""
+          direction="row"
+        >
+          <div
+            data-css-26=""
+            data-css-22=""
+          >
+            <ForwardRef
+              alignH="center"
+              alignV="center"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "",
+                }
+              }
+              data-css-17=""
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "",
+                  }
+                }
+                data-css-17=""
+                data-css-6=""
+              />
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+        <ForwardRef
+          data-css-23=""
+          data-css-1=""
+        >
+          <div
+            data-css-23=""
+            data-css-6=""
+            data-css-1=""
+          >
+            clipboard
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-2=""
+      direction="row"
+    >
+      <div
+        data-css-5=""
+        data-css-2=""
+      >
+        <ForwardRef
+          alignH="center"
+          alignV="center"
+          data-css-27=""
+          direction="column"
+        >
+          <div
+            data-css-27=""
+            data-css-15=""
+          />
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-28=""
+      direction="row"
+      onClick={[Function]}
+    >
+      <div
+        data-css-28=""
+        data-css-20=""
+        onClick={[Function]}
+      >
+        <ForwardRef
+          alignH="center"
+          alignV="center"
+          data-css-30=""
+          direction="row"
+        >
+          <div
+            data-css-30=""
+            data-css-22=""
+          >
+            <ForwardRef
+              alignH="center"
+              alignV="center"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "",
+                }
+              }
+              data-css-12=""
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "",
+                  }
+                }
+                data-css-12=""
+                data-css-6=""
+              />
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+        <ForwardRef
+          data-css-23=""
+          data-css-1=""
+        >
+          <div
+            data-css-23=""
+            data-css-6=""
+            data-css-1=""
+          >
+            Logout
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-2=""
+      direction="row"
+    >
+      <div
+        data-css-5=""
+        data-css-2=""
+      >
+        <ForwardRef
+          alignH="center"
+          alignV="center"
+          data-css-27=""
+          direction="column"
+        >
+          <div
+            data-css-27=""
+            data-css-15=""
+          />
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-31=""
+      data-e2e="service-chooser-feedback"
+      direction="row"
+      onClick={[Function]}
+    >
+      <div
+        data-css-20=""
+        data-css-31=""
+        data-e2e="service-chooser-feedback"
+        onClick={[Function]}
+      >
+        <ForwardRef
+          data-css-33=""
+        >
+          <div
+            data-css-6=""
+            data-css-33=""
+          >
+            Feedback
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-31=""
+      data-e2e="service-chooser-legal"
+      direction="row"
+      onClick={[Function]}
+    >
+      <div
+        data-css-20=""
+        data-css-31=""
+        data-e2e="service-chooser-legal"
+        onClick={[Function]}
+      >
+        <ForwardRef
+          data-css-33=""
+        >
+          <div
+            data-css-6=""
+            data-css-33=""
+          >
+            Legal disclosure
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-31=""
+      data-e2e="service-chooser-terms-of-use"
+      direction="row"
+      onClick={[Function]}
+    >
+      <div
+        data-css-20=""
+        data-css-31=""
+        data-e2e="service-chooser-terms-of-use"
+        onClick={[Function]}
+      >
+        <ForwardRef
+          data-css-33=""
+        >
+          <div
+            data-css-6=""
+            data-css-33=""
+          >
+            Terms of use
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+    <ForwardRef
+      alignV="center"
+      data-css-31=""
+      data-e2e="service-chooser-data-protection"
+      direction="row"
+      onClick={[Function]}
+    >
+      <div
+        data-css-20=""
+        data-css-31=""
+        data-e2e="service-chooser-data-protection"
+        onClick={[Function]}
+      >
+        <ForwardRef
+          data-css-33=""
+        >
+          <div
+            data-css-6=""
+            data-css-33=""
+          >
+            <a
+              data-e2e-data-protection-url=""
+              href=""
+              rel="noopener"
+              target="_blank"
+            >
+              <ForwardRef
+                data-css-33=""
+              >
+                <div
+                  data-css-6=""
+                  data-css-33=""
+                >
+                  Data protection
+                </div>
+              </ForwardRef>
+            </a>
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+  </div>
+</ForwardRef>
+`;

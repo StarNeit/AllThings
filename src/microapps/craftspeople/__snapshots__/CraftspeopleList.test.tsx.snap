@@ -1,0 +1,602 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CraftspeopleList should render CraftspeopleList 1`] = `
+.css-0,
+[data-css-0] {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #f3f5f7;
+  height: 100%;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 1;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  -webkit-flex: 1;
+}
+
+.css-3,
+[data-css-3] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #626262;
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+<Connect(ComponentWithMixpanel)
+  addressId="1234"
+  craftspeople={Array []}
+  loading={false}
+  locale="en_US"
+>
+  <ForwardRef>
+    <ForwardRef
+      data-css-0=""
+      direction="column"
+      flex="flex"
+      onScroll={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={Object {}}
+    >
+      <div
+        data-css-1=""
+        data-css-0=""
+        onScroll={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={Object {}}
+      >
+        <ForwardRef
+          alignH="space-around"
+          alignV="center"
+          direction="column"
+          flex="flex"
+        >
+          <div
+            data-css-2=""
+          >
+            <ForwardRef
+              data-css-3=""
+              data-e2e="no-craftspeople-text"
+            >
+              <div
+                data-css-4=""
+                data-css-3=""
+                data-e2e="no-craftspeople-text"
+              >
+                <span>
+                  There are no craftspeople assigned to your building.
+                </span>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+  </ForwardRef>
+</Connect(ComponentWithMixpanel)>
+`;
+
+exports[`CraftspeopleList should render CraftspeopleList 2`] = `
+.css-0,
+[data-css-0] {
+  width: 100%;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.css-1,
+[data-css-1] {
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-2,
+[data-css-2] {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #f3f5f7;
+  height: 100%;
+}
+
+.css-3,
+[data-css-3] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 1;
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-5,
+[data-css-5] {
+  display: block;
+  text-align: center;
+}
+
+.css-6,
+[data-css-6] {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.css-7,
+[data-css-7] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-9,
+[data-css-9] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: white;
+}
+
+.css-10,
+[data-css-10] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-11,
+[data-css-11] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-12,
+[data-css-12] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-13,
+[data-css-13] {
+  margin: 0 10px;
+}
+
+.css-14,
+[data-css-14] {
+  width: 16px;
+  height: 16px;
+  stroke: #626262;
+}
+
+.css-15,
+[data-css-15] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  cursor: pointer;
+  background-color: white;
+}
+
+.css-16,
+[data-css-16] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  cursor: pointer;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+<Connect(ComponentWithMixpanel)
+  addressId="1234"
+  craftspeople={
+    Array [
+      Object {
+        "_embedded": Object {
+          "externalAgentCompany": Object {
+            "_embedded": Object {
+              "logo": "abc.logo",
+            },
+          },
+        },
+        "categories": Array [
+          Object {
+            "description": Object {
+              "en_US": "foo",
+            },
+            "id": "575961208433e195008b4567",
+            "key": "Cleaning",
+            "name": Object {
+              "en_US": "Cleaning",
+            },
+            "thirdPartyData": true,
+            "vocabulary": "bar",
+          },
+        ],
+        "companyAddress": Object {
+          "city": "Freiburg",
+          "houseNumber": "82",
+          "postalCode": "79211",
+          "street": "Hindenburgstraße",
+        },
+        "companyId": "675961208433e195008b4569",
+        "companyName": "Cleaning Company GmbH",
+        "companyPhoneNumber": "+41 2329 77 77",
+        "id": "275961208433e195008b4564",
+        "phoneNumber": "+41 2329 23 23",
+        "username": "testPerson",
+      },
+    ]
+  }
+  loading={false}
+  locale="en_US"
+>
+  <ForwardRef>
+    <ForwardRef
+      data-css-2=""
+      direction="column"
+      flex="flex"
+      onScroll={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={Object {}}
+    >
+      <div
+        data-css-3=""
+        data-css-2=""
+        onScroll={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={Object {}}
+      >
+        <ForwardRef>
+          <div
+            data-css-4=""
+          >
+            <ForwardRef
+              data-css-6=""
+            >
+              <div
+                data-css-6=""
+                data-css-4=""
+              >
+                <ForwardRef
+                  data-css-7=""
+                >
+                  <div
+                    data-css-7=""
+                    data-css-4=""
+                  >
+                    Cleaning
+                  </div>
+                </ForwardRef>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              data-css-0=""
+            >
+              <div
+                data-css-0=""
+                data-css-4=""
+              >
+                <ForwardRef>
+                  <ForwardRef
+                    direction="column"
+                  >
+                    <div
+                      data-css-8=""
+                    >
+                      <ForwardRef
+                        alignV="center"
+                        data-css-5=""
+                        data-css-9=""
+                        direction="row"
+                      >
+                        <div
+                          data-css-5=""
+                          data-css-9=""
+                          data-css-10=""
+                        >
+                          <ForwardRef
+                            data-css-11=""
+                            data-e2e="craftspeople-company-Cleaning Company GmbH"
+                          >
+                            <div
+                              data-css-4=""
+                              data-css-11=""
+                              data-e2e="craftspeople-company-Cleaning Company GmbH"
+                            >
+                              Cleaning Company GmbH
+                            </div>
+                          </ForwardRef>
+                          <ForwardRef
+                            data-css-11=""
+                          >
+                            <div
+                              data-css-4=""
+                              data-css-11=""
+                            >
+                              Hindenburgstraße 82
+                            </div>
+                          </ForwardRef>
+                          <ForwardRef
+                            data-css-11=""
+                          >
+                            <div
+                              data-css-4=""
+                              data-css-11=""
+                            >
+                              79211 Freiburg
+                            </div>
+                          </ForwardRef>
+                        </div>
+                      </ForwardRef>
+                      <ForwardRef
+                        alignV="center"
+                        data-css-1=""
+                        data-css-9=""
+                        direction="row"
+                      >
+                        <div
+                          data-css-1=""
+                          data-css-9=""
+                          data-css-10=""
+                        >
+                          <a
+                            href="tel:+41 2329 77 77"
+                            onClick={[Function]}
+                          >
+                            <ForwardRef
+                              direction="row"
+                            >
+                              <div
+                                data-css-12=""
+                              >
+                                <ForwardRef
+                                  alignH="center"
+                                  alignV="center"
+                                  dangerouslySetInnerHTML={
+                                    Object {
+                                      "__html": "",
+                                    }
+                                  }
+                                  data-css-13=""
+                                  data-css-14=""
+                                >
+                                  <div
+                                    dangerouslySetInnerHTML={
+                                      Object {
+                                        "__html": "",
+                                      }
+                                    }
+                                    data-css-13=""
+                                    data-css-4=""
+                                    data-css-14=""
+                                  />
+                                </ForwardRef>
+                                +41 2329 77 77
+                              </div>
+                            </ForwardRef>
+                          </a>
+                        </div>
+                      </ForwardRef>
+                      <ForwardRef
+                        alignV="center"
+                        data-css-15=""
+                        data-css-1=""
+                        data-e2e="craftspeople-send-request"
+                        direction="row"
+                        onClick={[Function]}
+                      >
+                        <div
+                          data-css-15=""
+                          data-css-1=""
+                          data-css-16=""
+                          data-e2e="craftspeople-send-request"
+                          onClick={[Function]}
+                        >
+                          <ForwardRef
+                            alignH="center"
+                            alignV="center"
+                            dangerouslySetInnerHTML={
+                              Object {
+                                "__html": "",
+                              }
+                            }
+                            data-css-13=""
+                            data-css-14=""
+                          >
+                            <div
+                              dangerouslySetInnerHTML={
+                                Object {
+                                  "__html": "",
+                                }
+                              }
+                              data-css-13=""
+                              data-css-4=""
+                              data-css-14=""
+                            />
+                          </ForwardRef>
+                          <span>
+                            Send Request
+                          </span>
+                        </div>
+                      </ForwardRef>
+                    </div>
+                  </ForwardRef>
+                </ForwardRef>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+  </ForwardRef>
+</Connect(ComponentWithMixpanel)>
+`;

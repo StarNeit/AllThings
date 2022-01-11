@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Allthings</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="guid" content="21b697fa-0529-44c7-91d4-5adc4bfc1085">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#1C272C">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#1C272C">
+  <meta name="msapplication-TileColor" content="#1C272C">
+  <!-- iOS Safari -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#1C272C">
+
+  <link rel="stylesheet" href="$CDN_HOST_URL_PREFIX$/static/css/prod.min.css">
+  <link rel="icon" href="$CDN_HOST_URL_PREFIX$/static/img/favicon.png">
+
+  <style type="text/css">
+   body {
+       overflow: auto;
+       background: #ecf0f1;
+   }
+   h1 {
+       margin: 40px 0;
+   }
+   h2 {
+       margin-top: 40px;
+   }
+   #hold-on {
+       display: block; 
+       z-index: 9999; 
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: auto;
+       overflow: auto; 
+       background-color: #ecf0f1; 
+   }
+
+   #hold-on-content {
+       text-align: center;
+       margin: 10% auto;
+       margin-top: 20px; 
+       padding: 10px 20px 20px 20px;
+       width: 80%; 
+   }
+
+   #hold-on-content img {
+       max-width: auto;
+       display: inline;
+       float: left;
+       margin-right: 10px;
+       margin-top: -10px;
+   }
+
+   #logo {
+       padding: 20px;
+       background: #232323;
+       border-radius: 2px;
+       margin: -2px auto 0 auto;
+       width: 70px;
+       height: auto;
+   }
+   #error-img {
+      margin: 20px auto -40px auto;
+   }
+  </style>
+
+</head>
+
+<body>
+  <img src="$CDN_HOST_URL_PREFIX$/static/img/logo.png" id="logo" alt="Allthings"/>
+  <img src="$CDN_HOST_URL_PREFIX$/static/img/ux-illustrations/error.mobile.png" alt="" id="error-img">
+  <div id="hold-on"><div id="hold-on-content">
+    <h1 id="title">We are back in a minute!</h1>
+    <h2 id="subtitle">Things go wild sometimes.</h2>
+    <p id="paragraph">We are already working hard on getting Allthings back for you - this page should most likely even be gone after a quick <a href="javascript:location.reload();">refresh</a>.</p>
+    <!-- $APIG_VELOCITY_TEMPLATE$ -->
+  </div></div>
+  <script type="text/javascript">
+    var lang = window.navigator.language || window.navigator.userLanguage || "en_EN";
+    var i18n = {  
+      "de":{  
+          "h1":"Wir sind gleich wieder da!",
+          "h2":"Manchmal geht es ganz schön wild zu...",
+          "p":"Wir arbeiten bereits hart daran, Allthings für Sie wiederherzustellen - diese Seite sollte wahrscheinlich sogar nach einem <a href='javascript:location.reload();'>Neuladen</a> wieder verschwunden sein."
+      },
+      "fr":{  
+          "h1":"Nous sommes de retour dans une minute !",
+          "h2":"Les choses se déchaînent parfois.",
+          "p":"Nous travaillons déjà dur pour récupérer tout ce que vous voulez - cette page devrait très probablement disparaître après un rafraîchissement rapide."
+      },
+      "it":{  
+          "h1":"Siamo tornati tra un minuto!",
+          "h2":"A volte le cose si scatenano.",
+          "p":"Stiamo già lavorando duramente per ottenere Allthings indietro per voi - questa pagina dovrebbe molto probabilmente anche essere andato dopo un rapido aggiornamento."
+      },
+      "nl":{  
+          "h1":"We zijn terug in een minuut!",
+          "h2":"Soms gaat het wild.",
+          "p":"We zijn al hard aan het werk om Allthings voor u terug te krijgen - deze pagina zou hoogstwaarschijnlijk zelfs na een snelle verversing verdwenen moeten zijn."
+      },
+      "pt":{  
+          "h1":"Estamos de volta em um minuto!",
+          "h2":"As coisas ficam loucas às vezes.",
+          "p":"Nós já estamos trabalhando duro para trazer Allthings de volta para você - esta página provavelmente deve ter desaparecido após uma atualização rápida."
+      }
+    }
+    translation = i18n[lang.substr(0,2)];
+    if (lang && typeof translation !== "undefined" && (translation instanceof Object)) {
+      document.getElementById('title').innerHTML=translation['h1'];
+      document.getElementById('paragraph').innerHTML=translation['p'];
+      document.getElementById('subtitle').innerHTML=translation['h2'];
+    }
+  </script>
+</body>
+
+</html>

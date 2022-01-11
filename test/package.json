@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "appium": "1.7.1",
+    "appium-doctor": "1.4.3",
+    "chromedriver": "2.33.2",
+    "nightwatch": "0.9.19"
+  }
+}

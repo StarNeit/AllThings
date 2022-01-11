@@ -1,0 +1,1479 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the TermsAndDataPrivacy component of SignUp should render two ticked checkboxes and an error message 1`] = `
+Array [
+  .css-0,
+[data-css-0] {
+  position: relative;
+}
+
+.css-1,
+[data-css-1] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: #ffffff;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-3,
+[data-css-3] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-4,
+[data-css-4] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.css-5,
+[data-css-5] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-6,
+[data-css-6] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.css-7,
+[data-css-7] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-8,
+[data-css-8] {
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  background-color: #3598db;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #3598db;
+  transition: 250ms;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+}
+
+.css-9,
+[data-css-9] {
+  position: relative;
+  bottom: 1px;
+}
+
+.css-10,
+[data-css-10] {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}
+
+<ForwardRef
+    alignV="center"
+    data-css-1=""
+    direction="row"
+  >
+    <div
+      data-css-1=""
+      data-css-2=""
+    >
+      <ForwardRef
+        alignV="center"
+        direction="row"
+      >
+        <div
+          data-css-2=""
+        >
+          <ForwardRef
+            alignH="center"
+            alignV="center"
+            data-css-0=""
+            data-css-8=""
+            direction="row"
+          >
+            <div
+              data-css-0=""
+              data-css-3=""
+              data-css-8=""
+            >
+              <ForwardRef
+                data-css-9=""
+              >
+                <div
+                  data-css-9=""
+                  data-css-5=""
+                >
+                  <ForwardRef
+                    alignH="center"
+                    alignV="center"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "",
+                      }
+                    }
+                    data-css-10=""
+                  >
+                    <div
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "",
+                        }
+                      }
+                      data-css-5=""
+                      data-css-10=""
+                    />
+                  </ForwardRef>
+                </div>
+              </ForwardRef>
+              <ForwardRef
+                data-css-4=""
+              >
+                <div
+                  data-css-5=""
+                  data-css-4=""
+                >
+                  <input
+                    checked={true}
+                    data-e2e="signup-accept-terms-of-use"
+                    id="termsOfUse"
+                    name="termsOfUse"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                        "height": "25px",
+                        "margin": 0,
+                        "opacity": 0,
+                        "width": "25px",
+                      }
+                    }
+                    type="checkbox"
+                    value="true"
+                  />
+                </div>
+              </ForwardRef>
+            </div>
+          </ForwardRef>
+        </div>
+      </ForwardRef>
+      <label
+        htmlFor="termsOfUse"
+      >
+        <ForwardRef
+          data-css-6=""
+        >
+          <div
+            data-css-5=""
+            data-css-6=""
+          >
+            <ForwardRef
+              data-css-7=""
+            >
+              <div
+                data-css-5=""
+                data-css-7=""
+              >
+                <Connect(Link)
+                  data-e2e="signup-goto-terms-of-use"
+                  to="/terms-of-use"
+                >
+                  <Link
+                    data-e2e="signup-goto-terms-of-use"
+                    style={
+                      Object {
+                        "color": "initial",
+                        "fontSize": "12px",
+                        "textDecoration": "none",
+                      }
+                    }
+                    to="/terms-of-use"
+                  >
+                    <LinkAnchor
+                      data-e2e="signup-goto-terms-of-use"
+                      href="/terms-of-use"
+                      navigate={[Function]}
+                      style={
+                        Object {
+                          "color": "initial",
+                          "fontSize": "12px",
+                          "textDecoration": "none",
+                        }
+                      }
+                    >
+                      <a
+                        data-e2e="signup-goto-terms-of-use"
+                        href="/terms-of-use"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "color": "initial",
+                            "fontSize": "12px",
+                            "textDecoration": "none",
+                          }
+                        }
+                      >
+                        <ForwardRef
+                          data-css-7=""
+                        >
+                          <div
+                            data-css-5=""
+                            data-css-7=""
+                          >
+                            Terms of use
+                          </div>
+                        </ForwardRef>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </Connect(Link)>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </label>
+    </div>
+  </ForwardRef>,
+  .css-0,
+[data-css-0] {
+  position: relative;
+}
+
+.css-1,
+[data-css-2]:hover {
+  color: #1cabbb;
+}
+
+.css-3,
+[data-css-3] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: #ffffff;
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-5,
+[data-css-5] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-6,
+[data-css-6] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.css-7,
+[data-css-7] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-8,
+[data-css-8] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.css-9,
+[data-css-9] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-10,
+[data-css-10] {
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  background-color: #3598db;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #3598db;
+  transition: 250ms;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+}
+
+.css-11,
+[data-css-11] {
+  position: relative;
+  bottom: 1px;
+}
+
+.css-12,
+[data-css-12] {
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}
+
+<ForwardRef
+    alignV="center"
+    data-css-3=""
+    direction="row"
+  >
+    <div
+      data-css-3=""
+      data-css-4=""
+    >
+      <ForwardRef
+        alignV="center"
+        direction="row"
+      >
+        <div
+          data-css-4=""
+        >
+          <ForwardRef
+            alignH="center"
+            alignV="center"
+            data-css-0=""
+            data-css-10=""
+            direction="row"
+          >
+            <div
+              data-css-0=""
+              data-css-5=""
+              data-css-10=""
+            >
+              <ForwardRef
+                data-css-11=""
+              >
+                <div
+                  data-css-11=""
+                  data-css-7=""
+                >
+                  <ForwardRef
+                    alignH="center"
+                    alignV="center"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "",
+                      }
+                    }
+                    data-css-12=""
+                  >
+                    <div
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "",
+                        }
+                      }
+                      data-css-7=""
+                      data-css-12=""
+                    />
+                  </ForwardRef>
+                </div>
+              </ForwardRef>
+              <ForwardRef
+                data-css-6=""
+              >
+                <div
+                  data-css-7=""
+                  data-css-6=""
+                >
+                  <input
+                    checked={true}
+                    data-e2e="signup-accept-data-protection"
+                    id="dataProtection"
+                    name="dataProtection"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                        "height": "25px",
+                        "margin": 0,
+                        "opacity": 0,
+                        "width": "25px",
+                      }
+                    }
+                    type="checkbox"
+                    value="true"
+                  />
+                </div>
+              </ForwardRef>
+            </div>
+          </ForwardRef>
+        </div>
+      </ForwardRef>
+      <label
+        htmlFor="dataProtection"
+      >
+        <ForwardRef
+          data-css-8=""
+        >
+          <div
+            data-css-7=""
+            data-css-8=""
+          >
+            <ForwardRef
+              data-css-9=""
+            >
+              <div
+                data-css-7=""
+                data-css-9=""
+              >
+                <a
+                  data-e2e-data-protection-url="https://xyz"
+                  href="https://xyz"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <ForwardRef
+                    data-css-9=""
+                    data-css-2=""
+                  >
+                    <div
+                      data-css-7=""
+                      data-css-9=""
+                      data-css-2=""
+                    >
+                      Data protection conditions
+                    </div>
+                  </ForwardRef>
+                </a>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </label>
+    </div>
+  </ForwardRef>,
+]
+`;
+
+exports[`Check the TermsAndDataPrivacy component of SignUp should render two unticked checkboxes and no error message - data protection checking 1`] = `
+Array [
+  .css-0,
+[data-css-0] {
+  position: relative;
+}
+
+.css-1,
+[data-css-1] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: #ffffff;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-3,
+[data-css-3] {
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightGrey;
+  transition: 250ms;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-5,
+[data-css-5] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.css-6,
+[data-css-6] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-7,
+[data-css-7] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.css-8,
+[data-css-8] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+<ForwardRef
+    alignV="center"
+    data-css-1=""
+    direction="row"
+  >
+    <div
+      data-css-1=""
+      data-css-2=""
+    >
+      <ForwardRef
+        alignV="center"
+        direction="row"
+      >
+        <div
+          data-css-2=""
+        >
+          <ForwardRef
+            alignH="center"
+            alignV="center"
+            data-css-0=""
+            data-css-3=""
+            direction="row"
+          >
+            <div
+              data-css-0=""
+              data-css-3=""
+              data-css-4=""
+            >
+              <ForwardRef
+                data-css-5=""
+              >
+                <div
+                  data-css-6=""
+                  data-css-5=""
+                >
+                  <input
+                    checked={false}
+                    data-e2e="signup-accept-terms-of-use"
+                    id="termsOfUse"
+                    name="termsOfUse"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                        "height": "25px",
+                        "margin": 0,
+                        "opacity": 0,
+                        "width": "25px",
+                      }
+                    }
+                    type="checkbox"
+                    value="false"
+                  />
+                </div>
+              </ForwardRef>
+            </div>
+          </ForwardRef>
+        </div>
+      </ForwardRef>
+      <label
+        htmlFor="termsOfUse"
+      >
+        <ForwardRef
+          data-css-7=""
+        >
+          <div
+            data-css-6=""
+            data-css-7=""
+          >
+            <ForwardRef
+              data-css-8=""
+            >
+              <div
+                data-css-6=""
+                data-css-8=""
+              >
+                <Connect(Link)
+                  data-e2e="signup-goto-terms-of-use"
+                  to="/terms-of-use"
+                >
+                  <Link
+                    data-e2e="signup-goto-terms-of-use"
+                    style={
+                      Object {
+                        "color": "initial",
+                        "fontSize": "12px",
+                        "textDecoration": "none",
+                      }
+                    }
+                    to="/terms-of-use"
+                  >
+                    <LinkAnchor
+                      data-e2e="signup-goto-terms-of-use"
+                      href="/terms-of-use"
+                      navigate={[Function]}
+                      style={
+                        Object {
+                          "color": "initial",
+                          "fontSize": "12px",
+                          "textDecoration": "none",
+                        }
+                      }
+                    >
+                      <a
+                        data-e2e="signup-goto-terms-of-use"
+                        href="/terms-of-use"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "color": "initial",
+                            "fontSize": "12px",
+                            "textDecoration": "none",
+                          }
+                        }
+                      >
+                        <ForwardRef
+                          data-css-8=""
+                        >
+                          <div
+                            data-css-6=""
+                            data-css-8=""
+                          >
+                            Terms of use
+                          </div>
+                        </ForwardRef>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </Connect(Link)>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </label>
+    </div>
+  </ForwardRef>,
+  .css-0,
+[data-css-0] {
+  position: relative;
+}
+
+.css-1,
+[data-css-2]:hover {
+  color: #1cabbb;
+}
+
+.css-3,
+[data-css-3] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: #ffffff;
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-5,
+[data-css-5] {
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightGrey;
+  transition: 250ms;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+}
+
+.css-6,
+[data-css-6] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-7,
+[data-css-7] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-9,
+[data-css-9] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.css-10,
+[data-css-10] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+<ForwardRef
+    alignV="center"
+    data-css-3=""
+    direction="row"
+  >
+    <div
+      data-css-3=""
+      data-css-4=""
+    >
+      <ForwardRef
+        alignV="center"
+        direction="row"
+      >
+        <div
+          data-css-4=""
+        >
+          <ForwardRef
+            alignH="center"
+            alignV="center"
+            data-css-0=""
+            data-css-5=""
+            direction="row"
+          >
+            <div
+              data-css-0=""
+              data-css-5=""
+              data-css-6=""
+            >
+              <ForwardRef
+                data-css-7=""
+              >
+                <div
+                  data-css-8=""
+                  data-css-7=""
+                >
+                  <input
+                    checked={false}
+                    data-e2e="signup-accept-data-protection"
+                    id="dataProtection"
+                    name="dataProtection"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                        "height": "25px",
+                        "margin": 0,
+                        "opacity": 0,
+                        "width": "25px",
+                      }
+                    }
+                    type="checkbox"
+                    value="false"
+                  />
+                </div>
+              </ForwardRef>
+            </div>
+          </ForwardRef>
+        </div>
+      </ForwardRef>
+      <label
+        htmlFor="dataProtection"
+      >
+        <ForwardRef
+          data-css-9=""
+        >
+          <div
+            data-css-8=""
+            data-css-9=""
+          >
+            <ForwardRef
+              data-css-10=""
+            >
+              <div
+                data-css-8=""
+                data-css-10=""
+              >
+                <a
+                  data-e2e-data-protection-url="https://xyz"
+                  href="https://xyz"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <ForwardRef
+                    data-css-10=""
+                    data-css-2=""
+                  >
+                    <div
+                      data-css-8=""
+                      data-css-10=""
+                      data-css-2=""
+                    >
+                      Data protection conditions
+                    </div>
+                  </ForwardRef>
+                </a>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </label>
+    </div>
+  </ForwardRef>,
+]
+`;
+
+exports[`Check the TermsAndDataPrivacy component of SignUp should render two unticked checkboxes and no error message - terms of use checking 1`] = `
+Array [
+  .css-0,
+[data-css-0] {
+  position: relative;
+}
+
+.css-1,
+[data-css-1] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: #ffffff;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-3,
+[data-css-3] {
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightGrey;
+  transition: 250ms;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-5,
+[data-css-5] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.css-6,
+[data-css-6] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-7,
+[data-css-7] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.css-8,
+[data-css-8] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+<ForwardRef
+    alignV="center"
+    data-css-1=""
+    direction="row"
+  >
+    <div
+      data-css-1=""
+      data-css-2=""
+    >
+      <ForwardRef
+        alignV="center"
+        direction="row"
+      >
+        <div
+          data-css-2=""
+        >
+          <ForwardRef
+            alignH="center"
+            alignV="center"
+            data-css-0=""
+            data-css-3=""
+            direction="row"
+          >
+            <div
+              data-css-0=""
+              data-css-3=""
+              data-css-4=""
+            >
+              <ForwardRef
+                data-css-5=""
+              >
+                <div
+                  data-css-6=""
+                  data-css-5=""
+                >
+                  <input
+                    checked={false}
+                    data-e2e="signup-accept-terms-of-use"
+                    id="termsOfUse"
+                    name="termsOfUse"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                        "height": "25px",
+                        "margin": 0,
+                        "opacity": 0,
+                        "width": "25px",
+                      }
+                    }
+                    type="checkbox"
+                    value="false"
+                  />
+                </div>
+              </ForwardRef>
+            </div>
+          </ForwardRef>
+        </div>
+      </ForwardRef>
+      <label
+        htmlFor="termsOfUse"
+      >
+        <ForwardRef
+          data-css-7=""
+        >
+          <div
+            data-css-6=""
+            data-css-7=""
+          >
+            <ForwardRef
+              data-css-8=""
+            >
+              <div
+                data-css-6=""
+                data-css-8=""
+              >
+                <Connect(Link)
+                  data-e2e="signup-goto-terms-of-use"
+                  to="/terms-of-use"
+                >
+                  <Link
+                    data-e2e="signup-goto-terms-of-use"
+                    style={
+                      Object {
+                        "color": "initial",
+                        "fontSize": "12px",
+                        "textDecoration": "none",
+                      }
+                    }
+                    to="/terms-of-use"
+                  >
+                    <LinkAnchor
+                      data-e2e="signup-goto-terms-of-use"
+                      href="/terms-of-use"
+                      navigate={[Function]}
+                      style={
+                        Object {
+                          "color": "initial",
+                          "fontSize": "12px",
+                          "textDecoration": "none",
+                        }
+                      }
+                    >
+                      <a
+                        data-e2e="signup-goto-terms-of-use"
+                        href="/terms-of-use"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "color": "initial",
+                            "fontSize": "12px",
+                            "textDecoration": "none",
+                          }
+                        }
+                      >
+                        <ForwardRef
+                          data-css-8=""
+                        >
+                          <div
+                            data-css-6=""
+                            data-css-8=""
+                          >
+                            Terms of use
+                          </div>
+                        </ForwardRef>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                </Connect(Link)>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </label>
+    </div>
+  </ForwardRef>,
+  .css-0,
+[data-css-0] {
+  position: relative;
+}
+
+.css-1,
+[data-css-2]:hover {
+  color: #1cabbb;
+}
+
+.css-3,
+[data-css-3] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: #ffffff;
+}
+
+.css-4,
+[data-css-4] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-5,
+[data-css-5] {
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightGrey;
+  transition: 250ms;
+  cursor: pointer;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+}
+
+.css-6,
+[data-css-6] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-7,
+[data-css-7] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-9,
+[data-css-9] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.css-10,
+[data-css-10] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+<ForwardRef
+    alignV="center"
+    data-css-3=""
+    direction="row"
+  >
+    <div
+      data-css-3=""
+      data-css-4=""
+    >
+      <ForwardRef
+        alignV="center"
+        direction="row"
+      >
+        <div
+          data-css-4=""
+        >
+          <ForwardRef
+            alignH="center"
+            alignV="center"
+            data-css-0=""
+            data-css-5=""
+            direction="row"
+          >
+            <div
+              data-css-0=""
+              data-css-5=""
+              data-css-6=""
+            >
+              <ForwardRef
+                data-css-7=""
+              >
+                <div
+                  data-css-8=""
+                  data-css-7=""
+                >
+                  <input
+                    checked={false}
+                    data-e2e="signup-accept-data-protection"
+                    id="dataProtection"
+                    name="dataProtection"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                        "height": "25px",
+                        "margin": 0,
+                        "opacity": 0,
+                        "width": "25px",
+                      }
+                    }
+                    type="checkbox"
+                    value="false"
+                  />
+                </div>
+              </ForwardRef>
+            </div>
+          </ForwardRef>
+        </div>
+      </ForwardRef>
+      <label
+        htmlFor="dataProtection"
+      >
+        <ForwardRef
+          data-css-9=""
+        >
+          <div
+            data-css-8=""
+            data-css-9=""
+          >
+            <ForwardRef
+              data-css-10=""
+            >
+              <div
+                data-css-8=""
+                data-css-10=""
+              >
+                <a
+                  data-e2e-data-protection-url="https://xyz"
+                  href="https://xyz"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <ForwardRef
+                    data-css-10=""
+                    data-css-2=""
+                  >
+                    <div
+                      data-css-8=""
+                      data-css-10=""
+                      data-css-2=""
+                    >
+                      Data protection conditions
+                    </div>
+                  </ForwardRef>
+                </a>
+              </div>
+            </ForwardRef>
+          </div>
+        </ForwardRef>
+      </label>
+    </div>
+  </ForwardRef>,
+]
+`;

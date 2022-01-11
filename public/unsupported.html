@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>$APP_NAME$</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="guid" content="21b697fa-0529-44c7-91d4-5adc4bfc1085">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#1C272C">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#1C272C">
+  <meta name="msapplication-TileColor" content="#1C272C">
+  <!-- iOS Safari -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#1C272C">
+
+  <link rel="stylesheet" href="$CDN_HOST_URL_PREFIX$$CSS$?$VERSION$">
+  <link rel="icon" href="$CDN_HOST_URL_PREFIX$/static/img/favicon.png">
+  <style type="text/css">
+   body {
+       overflow: auto;
+       background: #ecf0f1;
+   }
+   h1 {
+       margin: 40px 0;
+   }
+   h2 {
+       margin-top: 40px;
+   }
+   #deprecation {
+       display: block; 
+       z-index: 9999; 
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: auto;
+       overflow: auto; 
+       background-color: #ecf0f1; 
+   }
+
+   #deprecation-content {
+       text-align: center;
+       margin: 10% auto;
+       margin-top: 20px; 
+       padding: 10px 20px 20px 20px;
+       width: 80%; 
+   }
+
+   #deprecation-content a {
+       display: block;
+       padding: 30px;
+       font-weight: bold;
+   }
+
+   #deprecation-content a:hover {
+       background-color: #f3f5f7;
+   }
+
+   #deprecation-content img {
+       max-width: auto;
+       display: inline;
+       float: left;
+       margin-right: 10px;
+       margin-top: -10px;
+   }
+
+   #deprecation-content ul {
+       background: #fff;
+       border: 1px solid rgba(0,0,0,0.1);  
+       border-radius: 4px;
+       max-width: 420px;
+       width: 100%;
+       margin: 0 auto;
+   }
+
+   #deprecation-content ul li {
+       border: 1px solid rgba(0,0,0,0.05); 
+       border-width: 1px 0 1px 0;
+       margin: -1px 0;
+       border-radius: 2px;
+   }
+
+   #deprecation-content ul li:after {
+       content: "";
+       display: table;
+       clear: both;
+   }
+   #logo {
+       padding: 20px;
+       background: #232323;
+       border-radius: 2px;
+       margin: -2px auto 0 auto;
+       width: 70px;
+       height: auto;
+   }
+   #error-img {
+      margin: 20px auto -40px auto;
+   }
+  </style>
+
+<script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init("$MIXPANEL_TOKEN$",{ disable_cookie: true, disable_persistence: true });</script>
+
+    <script type="text/javascript">
+      mixpanel.register({
+        version: '$VERSION$',
+        appId: '$APP_ID$'
+      });
+      mixpanel.track('page.viewed',{ path:'/unsupported' });
+    </script>
+
+</head>
+
+<body>
+  <img src="$CDN_HOST_URL_PREFIX$/static/img/logo.png" id="logo" alt="Allthings"/>
+  <img src="$CDN_HOST_URL_PREFIX$/static/img/ux-illustrations/error.desktop.png" alt="" id="error-img">
+  <div id="deprecation"><div id="deprecation-content">
+    <h1 id="title">We don't support this version of your browser, and neither should you!</h1>
+    <p id="paragraph">For a better experience, and to protect your security,
+      <strong>$APP_NAME$</strong> requires a modern browser.
+      Additionally, your browser must have JavaScript and Cookies enabled.
+    </p>
+    <h2 id="subtitle">You can download a supported Browser here:</h2>
+    <ul>
+      <li><a href="https://www.mozilla.org/firefox/new/" target="_blank"><img alt="" src="$CDN_HOST_URL_PREFIX$/static/img/browser/firefox.png" width="40" />Mozilla Firefox</a></li>
+      <li><a href="https://www.google.com/chrome/" target="_blank"><img alt="" src="$CDN_HOST_URL_PREFIX$/static/img/browser/chrome.png" width="40" />Google Chrome</a></li>
+      <li><a href="https://support.apple.com/downloads/safari" target="_blank"><img alt="" src="$CDN_HOST_URL_PREFIX$/static/img/browser/safari.png" width="40" />Apple Safari</a></li>
+      <li><a href="https://www.microsoft.com/windows/microsoft-edge" target="_blank"><img alt="" src="$CDN_HOST_URL_PREFIX$/static/img/browser/edge.png" width="40" />Microsoft Edge</a></li>
+    </ul>
+  </div></div>
+  <script type="text/javascript">
+    var lang = window.navigator.language || window.navigator.userLanguage || "en_EN";
+    var i18n = {  
+      "de":{  
+          "h1":"Diese Version Ihres Browsers wird leider nicht unterstützt!",
+          "h2":"Sie können einen unterstützten Browser hier herunterladen:",
+          "p":"Für ein besseres Erlebnis und zum Schutz Ihrer Sicherheit benötigt <strong>$APP_NAME$</strong> einen modernen Browser. Zusätzlich müssen in Ihrem Browser JavaScript und Cookies aktiviert sein."
+      },
+      "fr":{  
+          "h1":"Nous ne supportons malheureusement pas cette version de votre navigateur !",
+          "h2":"Vous pouvez télécharger un navigateur supporté ici :",
+          "p":"Pour une meilleure expérience, et pour protéger votre sécurité, <strong>$APP_NAME$</strong> nécessite un navigateur moderne. De plus, JavaScript et les cookies doivent être activés dans votre navigateur."
+      },
+      "it":{  
+          "h1":"Purtroppo non supportiamo questa versione del tuo browser!",
+          "h2":"Qui è possibile scaricare un browser supportato:",
+          "p":"Per una migliore esperienza, e per proteggere la vostra sicurezza, <strong>$APP_NAME$</strong> richiede un browser moderno. Inoltre, il tuo browser deve avere JavaScript e Cookies abilitati."
+      },
+      "nl":{  
+          "h1":"Helaas ondersteunen wij deze versie van uw browser niet!",
+          "h2":"Hier kunt u een ondersteunde browser downloaden:",
+          "p":"Voor een betere ervaring en om uw veiligheid te beschermen, heeft <strong>$APP_NAME$</strong> een moderne browser nodig. Bovendien moet uw browser JavaScript en Cookies ingeschakeld hebben."
+      },
+      "pt":{  
+          "h1":"Nós infelizmente não suportamos esta versão do seu navegador!",
+          "h2":"Você pode baixar um navegador suportado aqui:",
+          "p":"Para uma melhor experiência, e para proteger sua segurança, <strong>$APP_NAME$</strong> requer um navegador moderno. Além disso, seu navegador deve ter JavaScript e cookies ativados."
+      }
+    }
+    translation = i18n[lang.substr(0,2)];
+    if (lang && typeof translation !== "undefined" && (translation instanceof Object)) {
+      document.getElementById('title').innerHTML=translation['h1'];
+      document.getElementById('paragraph').innerHTML=translation['p'];
+      document.getElementById('subtitle').innerHTML=translation['h2'];
+    }
+  </script>
+</body>
+</html>

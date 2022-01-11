@@ -1,0 +1,25 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+127.0.0.1       api.dev.allthings.me
+127.0.0.1       auth.dev.allthings.me
+127.0.0.1       accounts.dev.allthings.me
+127.0.0.1       app.dev.allthings.me
+127.0.0.1       cockpit.dev.allthings.me
+127.0.0.1       messagetemplates.dev.allthings.me
+127.0.0.1       static.dev.allthings.me
+127.0.0.1       assets.dev.allthings.me
+127.0.0.1       api-doc.dev.allthings.me
+127.0.0.1       admin.dev.allthings.me
+127.0.0.1       dynamodb.dev.allthings.me
+
+127.0.0.2       www.google-analytics.com
+127.0.0.2       cdn.mxpnl.com
+127.0.0.2       api.mixpanel.com

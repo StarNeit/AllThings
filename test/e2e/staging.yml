@@ -1,0 +1,24 @@
+version: '2.2'
+services:
+  chromedriver:
+    image: allthings/chromedriver
+    init: true
+    tmpfs: /tmp
+    volumes:
+      - ./assets:/home/webdriver/assets
+    environment:
+      - ENABLE_VNC=true
+    ports:
+      - 5900:5900
+  nightwatch:
+    image: allthings/nightwatch:0.9
+    init: true
+    depends_on:
+      - chromedriver
+    volumes:
+      - .:/home/node
+    environment:
+      - WAIT_FOR_HOSTS=chromedriver:4444
+      - SELENIUM_HOST=chromedriver
+      - MAILHOG_API_URL=https://$MAILHOG_AUTH@mailhog.staging.allthings.me/api/v2
+      - LAUNCH_URL=${LAUNCH_URL_STAGING}

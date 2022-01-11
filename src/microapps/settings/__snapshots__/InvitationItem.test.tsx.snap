@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check invitation items should display one for created at 1`] = `
+<span>
+  Invited: February 15, 2017, 1:00 AM
+</span>
+`;
+
+exports[`Check invitation items should display one for expires at - future expiration date 1`] = `
+.css-0,
+[data-css-0] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+<ForwardRef
+  data-css-0=""
+  style={
+    Object {
+      "color": "#626262",
+    }
+  }
+>
+  <div
+    data-css-1=""
+    data-css-0=""
+    style={
+      Object {
+        "color": "#626262",
+      }
+    }
+  >
+    <span>
+      Expires in 10 years
+    </span>
+  </div>
+</ForwardRef>
+`;
+
+exports[`Check invitation items should display one for expires at - no expiration date 1`] = `
+.css-0,
+[data-css-0] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+<ForwardRef
+  data-css-0=""
+  style={
+    Object {
+      "color": "#626262",
+    }
+  }
+>
+  <div
+    data-css-1=""
+    data-css-0=""
+    style={
+      Object {
+        "color": "#626262",
+      }
+    }
+  >
+    <span>
+      No expiration date
+    </span>
+  </div>
+</ForwardRef>
+`;
+
+exports[`Check invitation items should display one for expires at - past expiration date 1`] = `
+.css-0,
+[data-css-0] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+<ForwardRef
+  data-css-0=""
+  style={
+    Object {
+      "color": "#626262",
+    }
+  }
+>
+  <div
+    data-css-1=""
+    data-css-0=""
+    style={
+      Object {
+        "color": "#626262",
+      }
+    }
+  >
+    <span>
+      Expired 10 years ago
+    </span>
+  </div>
+</ForwardRef>
+`;

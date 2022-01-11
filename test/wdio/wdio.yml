@@ -1,0 +1,61 @@
+version: '2.2'
+services:
+  chromedriver:
+    image: allthings/chromedriver
+    init: true
+    tmpfs: /tmp
+    environment:
+      - ENABLE_VNC=true
+      - EXPOSE_X11=true
+    volumes:
+      - ./assets:/home/webdriver/assets:ro
+    extra_hosts:
+      - www.google-analytics.com:127.0.0.2
+      - cdn.mxpnl.com:127.0.0.2
+      - api.mixpanel.com:127.0.0.2
+    ports:
+      - 127.0.0.1:5900:5900
+  geckodriver:
+    image: allthings/geckodriver
+    init: true
+    tmpfs: /tmp
+    shm_size: 2g
+    environment:
+      - ENABLE_VNC=true
+      - EXPOSE_X11=true
+    volumes:
+      - ./assets:/home/webdriver/assets:ro
+    extra_hosts:
+      - www.google-analytics.com:127.0.0.2
+      - cdn.mxpnl.com:127.0.0.2
+      - api.mixpanel.com:127.0.0.2
+    ports:
+      - 127.0.0.1:5901:5900
+  wdio:
+    image: allthings/wdio
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /home/wdio/.android
+    environment:
+      - WAIT_FOR_HOSTS=
+          chromedriver:4444
+          geckodriver:4444
+          ${PROJECT:-app}.${ENVIRONMENT:-dev}.allthings.me:443
+      - WAIT_FOR_HOSTS_TIMEOUT=60
+      - WINDOWS_HOST
+      - ANDROID_SERIAL
+      - PLATFORM_VERSION
+      - DEVICE_NAME
+      - ORIENTATION
+      - MACOS_ASSETS_DIR=$PWD/assets/
+      - WINDOWS_ASSETS_DIR
+      - PROJECT
+      - ENVIRONMENT
+    volumes:
+      - .:/opt:ro
+      - ./reports:/opt/reports
+    depends_on:
+      - chromedriver
+      - geckodriver

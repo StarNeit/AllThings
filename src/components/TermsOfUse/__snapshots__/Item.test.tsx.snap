@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check the Item component of the terms of use should render correctly 1`] = `
+.css-0,
+[data-css-0] {
+  margin: 10px;
+}
+
+.css-1,
+[data-css-1] {
+  cursor: pointer;
+  width: 100%;
+}
+
+.css-1:hover,
+[data-css-1]:hover {
+  background: rgba(236, 240, 241, 0.2);
+}
+
+.css-3,
+[data-css-3] {
+  flex: auto;
+  padding: 10px;
+  -webkit-flex: auto;
+}
+
+.css-4,
+[data-css-4] {
+  padding: 10px 15px;
+  min-height: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  background-color: white;
+}
+
+.css-5,
+[data-css-5] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-6,
+[data-css-6] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #7e8c8d;
+}
+
+.css-7,
+[data-css-7] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-8,
+[data-css-8] {
+  width: 27.5px;
+  height: 27.5px;
+  stroke: #7e8c8d;
+}
+
+<Connect(Link)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  target="_blank"
+  to="https://www.google.de"
+>
+  <a
+    href="https://www.google.de"
+    onClick={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    style={
+      Object {
+        "color": "initial",
+        "fontSize": "12px",
+        "textDecoration": "none",
+      }
+    }
+    target="_blank"
+  >
+    <ForwardRef
+      alignH="space-between"
+      alignV="center"
+      data-css-4=""
+      data-css-1=""
+      direction="row"
+    >
+      <div
+        data-css-4=""
+        data-css-1=""
+        data-css-5=""
+      >
+        <ForwardRef
+          data-css-6=""
+          data-css-3=""
+        >
+          <div
+            data-css-6=""
+            data-css-3=""
+            data-css-7=""
+          >
+            A message
+          </div>
+        </ForwardRef>
+        <ForwardRef
+          alignH="center"
+          alignV="center"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "",
+            }
+          }
+          data-css-0=""
+          data-css-8=""
+        >
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "",
+              }
+            }
+            data-css-7=""
+            data-css-0=""
+            data-css-8=""
+          />
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+  </a>
+</Connect(Link)>
+`;

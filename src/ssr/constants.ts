@@ -1,0 +1,6 @@
+export const APIAI_DEV_TOKEN = 'fd0089a1a8aa4c45b2214bbf5b70d4e6'
+export const APIAI_PROD_TOKEN = '7080d605889d457f889e2fc5b9512c56'
+export const ARCHILOGIC_TOKEN = '9f13b31a-2766-41f0-a441-1771107edf58'
+export const IS_DEV = process.env.NODE_ENV !== 'production'
+export const MIXPANEL_DEV_TOKEN = '2ee04cd5a6baee497b3ff218b93c2fec'
+export const MIXPANEL_PROD_TOKEN = 'c564f34389e37a7f13578e34697eca9e'

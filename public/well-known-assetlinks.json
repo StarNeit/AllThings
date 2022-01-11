@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "me.allthings.app",
+      "sha256_cert_fingerprints": [
+        "EA:84:E2:36:76:DC:8C:BD:24:66:66:D3:E2:EF:CE:DE:48:92:DF:A3:6B:32:60:9D:DE:DB:6E:F9:36:B6:6B:52"
+      ]
+    }
+  }
+]

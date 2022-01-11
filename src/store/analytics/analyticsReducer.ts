@@ -1,0 +1,32 @@
+export default {
+  addComment: () => ({}),
+  changeDetails: () => ({}),
+  changeNotificationSettings: () => ({}),
+  changePostText: () => ({}),
+  checkIn: () => ({}),
+  closeOverlay: ({ payload }: { payload: IndexSignature }) => payload,
+  createPost: () => ({}),
+  createThing: () => ({}),
+  deleteComment: () => ({}),
+  deletePost: () => ({}),
+  deleteThing: () => ({}),
+  invite: () => ({}),
+  likePost: () => ({}),
+  login: () => ({}),
+  oAuthLogin: () => ({}),
+  openForm: ({ payload }: { payload: IndexSignature }) => ({
+    name: payload.formName,
+  }),
+  openFeed: () => ({}),
+  postConversationMessage: () => ({}),
+  setServiceChooserVisibility: ({ payload }: { payload: IndexSignature }) =>
+    payload,
+  toggleOverlay: ({ payload }: { payload: IndexSignature }) => payload,
+  toggleServiceChooser: () => ({}),
+  unlikePost: () => ({}),
+  updateAvatar: () => ({}),
+  updateTicket: () => ({}),
+  '@@router/LOCATION_CHANGE': ({ payload }: { payload: IndexSignature }) => ({
+    path: payload.location.pathname,
+  }),
+}

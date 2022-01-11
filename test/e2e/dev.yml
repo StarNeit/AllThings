@@ -1,0 +1,35 @@
+version: '2.2'
+networks:
+  default:
+    external:
+      name: devenv_default
+services:
+  chromedriver:
+    image: allthings/chromedriver
+    init: true
+    tmpfs: /tmp
+    external_links:
+      - devenv_nginx_1:api.dev.allthings.me
+      - devenv_nginx_1:app.dev.allthings.me
+      - devenv_nginx_1:cockpit.dev.allthings.me
+      - devenv_nginx_1:static.dev.allthings.me
+      - devenv_nginx_1:assets.dev.allthings.me
+    volumes:
+      - ./assets:/home/webdriver/assets
+    environment:
+      - ENABLE_VNC=true
+    ports:
+      - 5900:5900
+  nightwatch:
+    image: allthings/nightwatch:0.9
+    init: true
+    depends_on:
+      - chromedriver
+    volumes:
+      - .:/home/node
+    environment:
+      - SCREENSHOTS_DIFF=true
+      - WAIT_FOR_HOSTS=chromedriver:4444
+      - SELENIUM_HOST=chromedriver
+      - MAILHOG_API_URL=http://mailhog:8025/api/v2
+      - LAUNCH_URL

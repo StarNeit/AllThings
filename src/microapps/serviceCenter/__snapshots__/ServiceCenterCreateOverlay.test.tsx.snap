@@ -1,0 +1,1982 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServiceCenterCreateOverlay should render ServiceCenterCreateOverlay with readonly info, if category is already chosen 1`] = `
+Array [
+  .css-0,
+[data-css-0] {
+  position: absolute;
+  bottom: 2px;
+  right: 15px;
+}
+
+.css-1,
+[data-css-1] {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-1:active,
+[data-css-1]:active {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.css-1:disabled,
+[data-css-1]:disabled {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.css-4,
+[data-css-4] {
+  position: relative;
+}
+
+.css-5,
+[data-css-5] {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.css-6 form,
+[data-css-6] form {
+  height: 100%;
+  overflow: auto;
+}
+
+.css-7,
+[data-css-7] {
+  cursor: auto !important;
+  width: 100%;
+  min-height: 100%;
+  max-height: 85vh;
+  z-index: 1001;
+  background: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-9,
+[data-css-9] {
+  animation: animation_b7xae4 0.42s;
+  -webkit-animation: animation_b7xae4 0.42s;
+}
+
+.css-10,
+[data-css-10] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-flex: 1;
+}
+
+.css-11,
+[data-css-11] {
+  height: 50px;
+  background-color: #f3f5f7;
+  position: relative;
+  z-index: 2;
+}
+
+.css-12,
+[data-css-12] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-13,
+[data-css-13] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.css-14,
+[data-css-14] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+}
+
+.css-16,
+[data-css-16] {
+  height: 50px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.css-16:hover,
+[data-css-16]:hover {
+  cursor: pointer;
+}
+
+.css-18,
+[data-css-18] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 0 0 auto;
+  cursor: pointer;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-19,
+[data-css-19] {
+  width: 14px;
+  height: 14px;
+  fill: lightBlack;
+}
+
+.css-20,
+[data-css-20] {
+  outline: none;
+}
+
+.css-21,
+[data-css-21] {
+  padding: 20px;
+  cursor: default;
+  transition: 250ms;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+}
+
+.css-22,
+[data-css-22] {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #f3f5f7;
+  height: 100%;
+}
+
+.css-23,
+[data-css-23] {
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.css-24,
+[data-css-24] {
+  align-items: stretch;
+  border: none;
+  box-shadow: ;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+}
+
+.css-25,
+[data-css-25] {
+  width: 100%;
+  cursor: not-allowed;
+  height: 50px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.css-26,
+[data-css-26] {
+  caret-color: transparent !important;
+  width: calc(100% - 5px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  padding-right: 30px;
+  color: black;
+  background-color: white;
+  pointer-events: none;
+}
+
+.css-27,
+[data-css-27] {
+  cursor: not-allowed;
+  height: 100%;
+  width: 50px;
+  padding: 16px 16px 16px 20px;
+}
+
+.css-28,
+[data-css-28] {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  cursor: pointer;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-29,
+[data-css-29] {
+  display: inline;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-right: 50px;
+  transition: padding-top .225s ease-out;
+  border: 0;
+  -webkit-transition: padding-top .225s ease-out;
+  -moz-transition: padding-top .225s ease-out;
+}
+
+.css-29:required,
+[data-css-29]:required {
+  box-shadow: none;
+}
+
+.css-29:-webkit-autofill ~ .label,
+[data-css-29]:-webkit-autofill ~ .label {
+  opacity: 1 !important;
+  top: 8px !important;
+}
+
+.css-29:-webkit-autofill ~ .checkmark,
+[data-css-29]:-webkit-autofill ~ .checkmark {
+  opacity: 1 !important;
+  top: 8px;
+}
+
+.css-29:-webkit-autofill,
+[data-css-29]:-webkit-autofill {
+  padding-top: 10px !important;
+}
+
+.css-29::-ms-clear,
+[data-css-29]::-ms-clear {
+  display: none;
+}
+
+.css-33,
+[data-css-33] {
+  position: absolute;
+  padding: 0 15px 0 15px;
+  width: 100%;
+  font-size: 10px;
+  opacity: 0;
+  transition: all .225s ease-out;
+  -webkit-transition: all .225s ease-out;
+  -moz-transition: all .225s ease-out;
+}
+
+.css-34,
+[data-css-34] {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.css-34:hover,
+[data-css-34]:hover {
+  text-overflow: clip;
+  white-space: normal;
+  background-color: #ffffff;
+}
+
+.css-36,
+[data-css-36] {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  pointer-events: none;
+  transition: opacity .225s;
+  opacity: 0;
+  -webkit-transition: opacity .225s;
+  -moz-transition: opacity .225s;
+}
+
+.css-37,
+[data-css-37] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #626262;
+}
+
+.css-38,
+[data-css-38] {
+  width: 16px;
+  height: 16px;
+  fill: lightGrey;
+}
+
+.css-39,
+[data-css-39] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.css-40,
+[data-css-40] {
+  width: 10px;
+  height: 10px;
+  stroke: black;
+}
+
+.css-41,
+[data-css-41] {
+  display: inline;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  padding-top: 0;
+  padding-right: 15px;
+  transition: padding-top .225s ease-out;
+  border: 0;
+  -webkit-transition: padding-top .225s ease-out;
+  -moz-transition: padding-top .225s ease-out;
+}
+
+.css-41:required,
+[data-css-41]:required {
+  box-shadow: none;
+}
+
+.css-41:-webkit-autofill ~ .label,
+[data-css-41]:-webkit-autofill ~ .label {
+  opacity: 1 !important;
+  top: 8px !important;
+}
+
+.css-41:-webkit-autofill ~ .checkmark,
+[data-css-41]:-webkit-autofill ~ .checkmark {
+  opacity: 1 !important;
+  top: 8px;
+}
+
+.css-41:-webkit-autofill,
+[data-css-41]:-webkit-autofill {
+  padding-top: 10px !important;
+}
+
+.css-41::-ms-clear,
+[data-css-41]::-ms-clear {
+  display: none;
+}
+
+.css-45,
+[data-css-45] {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.css-45:hover,
+[data-css-45]:hover {
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.css-47,
+[data-css-47] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #626262;
+}
+
+.css-48,
+[data-css-48] {
+  display: inline;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  transition: padding-top .225s ease-out;
+  height: calc(30px*5);
+  width: 100%;
+  padding: 10px 15px;
+  padding-top: 10px;
+  border: 0;
+  -webkit-transition: padding-top .225s ease-out;
+  -moz-transition: padding-top .225s ease-out;
+}
+
+.css-48:invalid:focus,
+[data-css-48]:invalid:focus {
+  color: red;
+}
+
+.css-50,
+[data-css-50] {
+  display: inline;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  padding-top: 10px;
+  padding-right: 15px;
+  transition: padding-top .225s ease-out;
+  border: 0;
+  -webkit-transition: padding-top .225s ease-out;
+  -moz-transition: padding-top .225s ease-out;
+}
+
+.css-50:required,
+[data-css-50]:required {
+  box-shadow: none;
+}
+
+.css-50:-webkit-autofill ~ .label,
+[data-css-50]:-webkit-autofill ~ .label {
+  opacity: 1 !important;
+  top: 8px !important;
+}
+
+.css-50:-webkit-autofill ~ .checkmark,
+[data-css-50]:-webkit-autofill ~ .checkmark {
+  opacity: 1 !important;
+  top: 8px;
+}
+
+.css-50:-webkit-autofill,
+[data-css-50]:-webkit-autofill {
+  padding-top: 10px !important;
+}
+
+.css-50::-ms-clear,
+[data-css-50]::-ms-clear {
+  display: none;
+}
+
+.css-54,
+[data-css-54] {
+  background: #fff;
+  margin: 0 -3px;
+  padding: 10px;
+}
+
+.css-55,
+[data-css-55] {
+  width: 95px;
+  height: 95px;
+  border: 2px dashed #bec3c7;
+  border-radius: 2px;
+  margin: 3px;
+}
+
+.css-56,
+[data-css-56] {
+  box-sizing: border-box;
+  align-content: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+  -webkit-align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-57,
+[data-css-57] {
+  width: 47.5px;
+  height: 47.5px;
+  fill: #bec3c7;
+}
+
+.css-58,
+[data-css-58] {
+  background-color: #000000;
+  box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  height: 50px;
+  overflow: hidden;
+  transition: 250ms ease-in-out;
+  width: 100%;
+  -webkit-transition: 250ms ease-in-out;
+  -moz-transition: 250ms ease-in-out;
+}
+
+.css-58:hover,
+[data-css-58]:hover {
+  background: #000000;
+}
+
+.css-60,
+[data-css-60] {
+  position: absolute;
+  bottom: 0;
+}
+
+.css-61,
+[data-css-61] {
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1;
+  -webkit-align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 1;
+}
+
+.css-62,
+[data-css-62] {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+@media all and (min-width: 880px) {
+  .css-9,
+  [data-css-9] {
+    flex: auto;
+    height: 100vh;
+    -webkit-flex: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .css-16,
+  [data-css-16] {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+<div>
+    <ForwardRef
+      alignH="center"
+      alignV="stretch"
+      data-css-7=""
+      data-css-6=""
+      data-e2e="overlay"
+      direction="row"
+      onMouseDown={[Function]}
+    >
+      <div
+        data-css-7=""
+        data-css-8=""
+        data-css-6=""
+        data-e2e="overlay"
+        onMouseDown={[Function]}
+      >
+        <ForwardRef
+          alignV="stretch"
+          data-css-4=""
+          data-css-9=""
+          direction="column"
+          flex="flex"
+          style={
+            Object {
+              "background": "#FFF",
+              "maxHeight": 736,
+              "maxWidth": 430,
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            data-css-10=""
+            data-css-4=""
+            data-css-9=""
+            style={
+              Object {
+                "background": "#FFF",
+                "maxHeight": 736,
+                "maxWidth": 430,
+                "width": "100%",
+              }
+            }
+          >
+            <ForwardRef
+              alignH="space-between"
+              alignV="center"
+              data-css-11=""
+              direction="row"
+            >
+              <div
+                data-css-12=""
+                data-css-11=""
+              >
+                <ForwardRef
+                  data-css-13=""
+                  data-e2e="cancel-overlay-title"
+                >
+                  <div
+                    data-css-14=""
+                    data-css-13=""
+                    data-e2e="cancel-overlay-title"
+                  >
+                    <ForwardRef
+                      data-css-15=""
+                    >
+                      <div
+                        data-css-15=""
+                        data-css-14=""
+                      >
+                        New service enquiry
+                      </div>
+                    </ForwardRef>
+                  </div>
+                </ForwardRef>
+                <ForwardRef
+                  alignH="center"
+                  alignV="center"
+                  data-css-16=""
+                  data-e2e="cancel-overlay"
+                  direction="row"
+                  onClick={[MockFunction]}
+                >
+                  <div
+                    data-css-16=""
+                    data-css-18=""
+                    data-e2e="cancel-overlay"
+                    onClick={[MockFunction]}
+                  >
+                    <ForwardRef
+                      alignH="center"
+                      alignV="center"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "",
+                        }
+                      }
+                      data-css-19=""
+                    >
+                      <div
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "",
+                          }
+                        }
+                        data-css-14=""
+                        data-css-19=""
+                      />
+                    </ForwardRef>
+                  </div>
+                </ForwardRef>
+              </div>
+            </ForwardRef>
+            <form
+              method="POST"
+              onSubmit={[Function]}
+            >
+              <div
+                data-css-20=""
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragEnter={[Function]}
+                onDragLeave={[Function]}
+                onDragOver={[Function]}
+                onDrop={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                style={
+                  Object {
+                    "height": "calc(100% - 50px)",
+                    "overflow": "auto",
+                  }
+                }
+                tabIndex={0}
+              >
+                <input
+                  accept="image/jpeg,image/png"
+                  autoComplete="off"
+                  multiple={true}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "display": "none",
+                    }
+                  }
+                  tabIndex={-1}
+                  type="file"
+                />
+                <div
+                  data-css-5=""
+                />
+                <ForwardRef>
+                  <ForwardRef
+                    data-css-22=""
+                    direction="column"
+                    flex="flex"
+                    onScroll={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    style={Object {}}
+                  >
+                    <div
+                      data-css-10=""
+                      data-css-22=""
+                      onScroll={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchMove={[Function]}
+                      onTouchStart={[Function]}
+                      style={Object {}}
+                    >
+                      <ForwardRef
+                        data-css-23=""
+                        data-e2e="category-wrapper"
+                      >
+                        <div
+                          data-css-23=""
+                          data-css-14=""
+                          data-e2e="category-wrapper"
+                        >
+                          <div
+                            aria-expanded={false}
+                            aria-haspopup="listbox"
+                            aria-labelledby="downshift-0-label"
+                            aria-owns={null}
+                            data-css-24=""
+                            role="combobox"
+                          >
+                            <ForwardRef
+                              data-css-4=""
+                            >
+                              <div
+                                data-css-4=""
+                                data-css-14=""
+                              >
+                                <ForwardRef
+                                  data-css-25=""
+                                  onClick={[Function]}
+                                >
+                                  <div
+                                    data-css-28=""
+                                    data-css-25=""
+                                    onClick={[Function]}
+                                  >
+                                    <ForwardRef
+                                      autoComplete="off"
+                                      data-css-26=""
+                                      data-e2e="service-center-overlay-choose-category"
+                                      data-e2e-disabled={true}
+                                      forceHideCheckmark={true}
+                                      hasRightIcon={true}
+                                      label="Choose the category of your enquiry"
+                                      onKeyDown={[Function]}
+                                      onPaste={[Function]}
+                                      placeholder="Choose the category of your enquiry"
+                                      required={true}
+                                      value="Cleaning"
+                                    >
+                                      <ForwardRef
+                                        data-css-4=""
+                                        style={
+                                          Object {
+                                            "width": "100%",
+                                          }
+                                        }
+                                      >
+                                        <div
+                                          data-css-4=""
+                                          data-css-14=""
+                                          style={
+                                            Object {
+                                              "width": "100%",
+                                            }
+                                          }
+                                        >
+                                          <input
+                                            aria-required={true}
+                                            autoComplete="off"
+                                            data-css-26=""
+                                            data-css-29=""
+                                            data-e2e="service-center-overlay-choose-category"
+                                            data-e2e-disabled={true}
+                                            onChange={[Function]}
+                                            onKeyDown={[Function]}
+                                            onPaste={[Function]}
+                                            placeholder="Choose the category of your enquiry"
+                                            required={true}
+                                            type="text"
+                                            value="Cleaning"
+                                          />
+                                          <ForwardRef
+                                            className="label"
+                                            data-css-33=""
+                                            style={
+                                              Object {
+                                                "opacity": 1,
+                                                "top": 8,
+                                              }
+                                            }
+                                          >
+                                            <div
+                                              className="label"
+                                              data-css-14=""
+                                              data-css-33=""
+                                              style={
+                                                Object {
+                                                  "opacity": 1,
+                                                  "top": 8,
+                                                }
+                                              }
+                                            >
+                                              <ForwardRef
+                                                data-css-34=""
+                                                data-css-37=""
+                                              >
+                                                <div
+                                                  data-css-34=""
+                                                  data-css-14=""
+                                                  data-css-37=""
+                                                >
+                                                  Choose the category of your enquiry
+                                                   
+                                                  *
+                                                </div>
+                                              </ForwardRef>
+                                            </div>
+                                          </ForwardRef>
+                                          <ForwardRef
+                                            className="checkmark"
+                                            data-css-36=""
+                                          >
+                                            <div
+                                              className="checkmark"
+                                              data-css-36=""
+                                              data-css-14=""
+                                            >
+                                              <ForwardRef
+                                                alignH="center"
+                                                alignV="center"
+                                                dangerouslySetInnerHTML={
+                                                  Object {
+                                                    "__html": "",
+                                                  }
+                                                }
+                                                data-css-38=""
+                                              >
+                                                <div
+                                                  dangerouslySetInnerHTML={
+                                                    Object {
+                                                      "__html": "",
+                                                    }
+                                                  }
+                                                  data-css-14=""
+                                                  data-css-38=""
+                                                />
+                                              </ForwardRef>
+                                            </div>
+                                          </ForwardRef>
+                                        </div>
+                                      </ForwardRef>
+                                    </ForwardRef>
+                                    <input
+                                      hidden={true}
+                                      name="category"
+                                      type="hidden"
+                                      value="category-1234"
+                                    />
+                                    <ForwardRef
+                                      data-css-39=""
+                                      data-css-27=""
+                                    >
+                                      <div
+                                        data-css-39=""
+                                        data-css-27=""
+                                        data-css-14=""
+                                      >
+                                        <ForwardRef
+                                          alignH="center"
+                                          alignV="center"
+                                          dangerouslySetInnerHTML={
+                                            Object {
+                                              "__html": "",
+                                            }
+                                          }
+                                          data-css-40=""
+                                        >
+                                          <div
+                                            dangerouslySetInnerHTML={
+                                              Object {
+                                                "__html": "",
+                                              }
+                                            }
+                                            data-css-40=""
+                                            data-css-14=""
+                                          />
+                                        </ForwardRef>
+                                      </div>
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                              </div>
+                            </ForwardRef>
+                            <ForwardRef
+                              data-css-4=""
+                            >
+                              <div
+                                data-css-4=""
+                                data-css-14=""
+                              />
+                            </ForwardRef>
+                          </div>
+                        </div>
+                      </ForwardRef>
+                      <ForwardRef
+                        data-css-23=""
+                        data-e2e="address-wrapper"
+                      >
+                        <div
+                          data-css-23=""
+                          data-css-14=""
+                          data-e2e="address-wrapper"
+                        >
+                          <div
+                            aria-expanded={false}
+                            aria-haspopup="listbox"
+                            aria-labelledby="downshift-1-label"
+                            aria-owns={null}
+                            data-css-24=""
+                            role="combobox"
+                          >
+                            <ForwardRef
+                              data-css-4=""
+                            >
+                              <div
+                                data-css-4=""
+                                data-css-14=""
+                              >
+                                <ForwardRef
+                                  data-css-25=""
+                                  onClick={[Function]}
+                                >
+                                  <div
+                                    data-css-28=""
+                                    data-css-25=""
+                                    onClick={[Function]}
+                                  >
+                                    <ForwardRef
+                                      autoComplete="off"
+                                      data-css-26=""
+                                      data-e2e="service-center-overlay-choose-address"
+                                      data-e2e-disabled={true}
+                                      forceHideCheckmark={true}
+                                      hasRightIcon={true}
+                                      label="Choose from your addresses"
+                                      onKeyDown={[Function]}
+                                      onPaste={[Function]}
+                                      placeholder="Choose from your addresses"
+                                      required={true}
+                                      value="Address#1"
+                                    >
+                                      <ForwardRef
+                                        data-css-4=""
+                                        style={
+                                          Object {
+                                            "width": "100%",
+                                          }
+                                        }
+                                      >
+                                        <div
+                                          data-css-4=""
+                                          data-css-14=""
+                                          style={
+                                            Object {
+                                              "width": "100%",
+                                            }
+                                          }
+                                        >
+                                          <input
+                                            aria-required={true}
+                                            autoComplete="off"
+                                            data-css-26=""
+                                            data-css-29=""
+                                            data-e2e="service-center-overlay-choose-address"
+                                            data-e2e-disabled={true}
+                                            onChange={[Function]}
+                                            onKeyDown={[Function]}
+                                            onPaste={[Function]}
+                                            placeholder="Choose from your addresses"
+                                            required={true}
+                                            type="text"
+                                            value="Address#1"
+                                          />
+                                          <ForwardRef
+                                            className="label"
+                                            data-css-33=""
+                                            style={
+                                              Object {
+                                                "opacity": 1,
+                                                "top": 8,
+                                              }
+                                            }
+                                          >
+                                            <div
+                                              className="label"
+                                              data-css-14=""
+                                              data-css-33=""
+                                              style={
+                                                Object {
+                                                  "opacity": 1,
+                                                  "top": 8,
+                                                }
+                                              }
+                                            >
+                                              <ForwardRef
+                                                data-css-34=""
+                                                data-css-37=""
+                                              >
+                                                <div
+                                                  data-css-34=""
+                                                  data-css-14=""
+                                                  data-css-37=""
+                                                >
+                                                  Choose from your addresses
+                                                   
+                                                  *
+                                                </div>
+                                              </ForwardRef>
+                                            </div>
+                                          </ForwardRef>
+                                          <ForwardRef
+                                            className="checkmark"
+                                            data-css-36=""
+                                          >
+                                            <div
+                                              className="checkmark"
+                                              data-css-36=""
+                                              data-css-14=""
+                                            >
+                                              <ForwardRef
+                                                alignH="center"
+                                                alignV="center"
+                                                dangerouslySetInnerHTML={
+                                                  Object {
+                                                    "__html": "",
+                                                  }
+                                                }
+                                                data-css-38=""
+                                              >
+                                                <div
+                                                  dangerouslySetInnerHTML={
+                                                    Object {
+                                                      "__html": "",
+                                                    }
+                                                  }
+                                                  data-css-14=""
+                                                  data-css-38=""
+                                                />
+                                              </ForwardRef>
+                                            </div>
+                                          </ForwardRef>
+                                        </div>
+                                      </ForwardRef>
+                                    </ForwardRef>
+                                    <input
+                                      hidden={true}
+                                      name="address"
+                                      type="hidden"
+                                      value="address-1234"
+                                    />
+                                    <ForwardRef
+                                      data-css-39=""
+                                      data-css-27=""
+                                    >
+                                      <div
+                                        data-css-39=""
+                                        data-css-27=""
+                                        data-css-14=""
+                                      >
+                                        <ForwardRef
+                                          alignH="center"
+                                          alignV="center"
+                                          dangerouslySetInnerHTML={
+                                            Object {
+                                              "__html": "",
+                                            }
+                                          }
+                                          data-css-40=""
+                                        >
+                                          <div
+                                            dangerouslySetInnerHTML={
+                                              Object {
+                                                "__html": "",
+                                              }
+                                            }
+                                            data-css-40=""
+                                            data-css-14=""
+                                          />
+                                        </ForwardRef>
+                                      </div>
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                              </div>
+                            </ForwardRef>
+                            <ForwardRef
+                              data-css-4=""
+                            >
+                              <div
+                                data-css-4=""
+                                data-css-14=""
+                              />
+                            </ForwardRef>
+                          </div>
+                        </div>
+                      </ForwardRef>
+                      <ForwardRef
+                        data-css-23=""
+                      >
+                        <div
+                          data-css-23=""
+                          data-css-14=""
+                        >
+                          <ForwardRef
+                            data-e2e="service-center-overlay-title"
+                            label="Title of the ticket"
+                            maxLength={250}
+                            name="title"
+                            placeholder="Title of the ticket"
+                            required={true}
+                            type="text"
+                          >
+                            <ForwardRef
+                              data-css-4=""
+                              style={
+                                Object {
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                data-css-4=""
+                                data-css-14=""
+                                style={
+                                  Object {
+                                    "width": "100%",
+                                  }
+                                }
+                              >
+                                <input
+                                  aria-required={true}
+                                  data-css-41=""
+                                  data-e2e="service-center-overlay-title"
+                                  maxLength={250}
+                                  name="title"
+                                  onChange={[Function]}
+                                  placeholder="Title of the ticket"
+                                  required={true}
+                                  type="text"
+                                />
+                                <ForwardRef
+                                  className="label"
+                                  data-css-33=""
+                                  style={
+                                    Object {
+                                      "opacity": 0,
+                                      "top": 12,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="label"
+                                    data-css-14=""
+                                    data-css-33=""
+                                    style={
+                                      Object {
+                                        "opacity": 0,
+                                        "top": 12,
+                                      }
+                                    }
+                                  >
+                                    <ForwardRef
+                                      data-css-37=""
+                                      data-css-45=""
+                                    >
+                                      <div
+                                        data-css-14=""
+                                        data-css-37=""
+                                        data-css-45=""
+                                      >
+                                        Title of the ticket
+                                         
+                                        *
+                                      </div>
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                                <ForwardRef
+                                  className="checkmark"
+                                  data-css-36=""
+                                >
+                                  <div
+                                    className="checkmark"
+                                    data-css-36=""
+                                    data-css-14=""
+                                  >
+                                    <ForwardRef
+                                      alignH="center"
+                                      alignV="center"
+                                      dangerouslySetInnerHTML={
+                                        Object {
+                                          "__html": "",
+                                        }
+                                      }
+                                      data-css-38=""
+                                    >
+                                      <div
+                                        dangerouslySetInnerHTML={
+                                          Object {
+                                            "__html": "",
+                                          }
+                                        }
+                                        data-css-14=""
+                                        data-css-38=""
+                                      />
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                                <ForwardRef
+                                  data-css-0=""
+                                >
+                                  <div
+                                    data-css-14=""
+                                    data-css-0=""
+                                  >
+                                    <ForwardRef
+                                      data-css-47=""
+                                    >
+                                      <div
+                                        data-css-47=""
+                                        data-css-14=""
+                                      >
+                                        0
+                                        /
+                                        250
+                                      </div>
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                              </div>
+                            </ForwardRef>
+                          </ForwardRef>
+                        </div>
+                      </ForwardRef>
+                      <ForwardRef
+                        data-css-23=""
+                      >
+                        <div
+                          data-css-23=""
+                          data-css-14=""
+                        >
+                          <ForwardRef
+                            data-e2e="service-center-overlay-description"
+                            label="Describe your request"
+                            lines={5}
+                            name="description"
+                            placeholder="Describe your request"
+                            required={true}
+                            type="text"
+                          >
+                            <ForwardRef
+                              data-css-4=""
+                              style={
+                                Object {
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                data-css-4=""
+                                data-css-14=""
+                                style={
+                                  Object {
+                                    "width": "100%",
+                                  }
+                                }
+                              >
+                                <textarea
+                                  data-css-48=""
+                                  data-e2e="service-center-overlay-description"
+                                  name="description"
+                                  onChange={[Function]}
+                                  placeholder="Describe your request"
+                                  required={true}
+                                />
+                                <ForwardRef
+                                  className="label"
+                                  data-css-33=""
+                                  style={
+                                    Object {
+                                      "opacity": 0,
+                                      "top": 12,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="label"
+                                    data-css-14=""
+                                    data-css-33=""
+                                    style={
+                                      Object {
+                                        "opacity": 0,
+                                        "top": 12,
+                                      }
+                                    }
+                                  >
+                                    <ForwardRef
+                                      data-css-37=""
+                                      data-css-45=""
+                                    >
+                                      <div
+                                        data-css-14=""
+                                        data-css-37=""
+                                        data-css-45=""
+                                      >
+                                        Describe your request
+                                         
+                                        *
+                                      </div>
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                                <ForwardRef
+                                  className="checkmark"
+                                  data-css-36=""
+                                >
+                                  <div
+                                    className="checkmark"
+                                    data-css-36=""
+                                    data-css-14=""
+                                  >
+                                    <ForwardRef
+                                      alignH="center"
+                                      alignV="center"
+                                      dangerouslySetInnerHTML={
+                                        Object {
+                                          "__html": "",
+                                        }
+                                      }
+                                      data-css-38=""
+                                    >
+                                      <div
+                                        dangerouslySetInnerHTML={
+                                          Object {
+                                            "__html": "",
+                                          }
+                                        }
+                                        data-css-14=""
+                                        data-css-38=""
+                                      />
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                              </div>
+                            </ForwardRef>
+                          </ForwardRef>
+                        </div>
+                      </ForwardRef>
+                      <ForwardRef
+                        data-css-23=""
+                      >
+                        <div
+                          data-css-23=""
+                          data-css-14=""
+                        >
+                          <ForwardRef
+                            data-e2e="service-center-overlay-phonenumber"
+                            label="phone number"
+                            name="phoneNumber"
+                            placeholder="phone number"
+                            required={true}
+                            type="tel"
+                            value="+49 000 00000"
+                          >
+                            <ForwardRef
+                              data-css-4=""
+                              style={
+                                Object {
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                data-css-4=""
+                                data-css-14=""
+                                style={
+                                  Object {
+                                    "width": "100%",
+                                  }
+                                }
+                              >
+                                <input
+                                  aria-required={true}
+                                  data-css-50=""
+                                  data-e2e="service-center-overlay-phonenumber"
+                                  name="phoneNumber"
+                                  onChange={[Function]}
+                                  placeholder="phone number"
+                                  required={true}
+                                  type="tel"
+                                  value="+49 000 00000"
+                                />
+                                <ForwardRef
+                                  className="label"
+                                  data-css-33=""
+                                  style={
+                                    Object {
+                                      "opacity": 1,
+                                      "top": 8,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="label"
+                                    data-css-14=""
+                                    data-css-33=""
+                                    style={
+                                      Object {
+                                        "opacity": 1,
+                                        "top": 8,
+                                      }
+                                    }
+                                  >
+                                    <ForwardRef
+                                      data-css-34=""
+                                      data-css-37=""
+                                    >
+                                      <div
+                                        data-css-34=""
+                                        data-css-14=""
+                                        data-css-37=""
+                                      >
+                                        phone number
+                                         
+                                        *
+                                      </div>
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                                <ForwardRef
+                                  className="checkmark"
+                                  data-css-36=""
+                                >
+                                  <div
+                                    className="checkmark"
+                                    data-css-36=""
+                                    data-css-14=""
+                                  >
+                                    <ForwardRef
+                                      alignH="center"
+                                      alignV="center"
+                                      dangerouslySetInnerHTML={
+                                        Object {
+                                          "__html": "",
+                                        }
+                                      }
+                                      data-css-38=""
+                                    >
+                                      <div
+                                        dangerouslySetInnerHTML={
+                                          Object {
+                                            "__html": "",
+                                          }
+                                        }
+                                        data-css-14=""
+                                        data-css-38=""
+                                      />
+                                    </ForwardRef>
+                                  </div>
+                                </ForwardRef>
+                              </div>
+                            </ForwardRef>
+                          </ForwardRef>
+                        </div>
+                      </ForwardRef>
+                      <ForwardRef
+                        data-css-54=""
+                        direction="row"
+                        wrap="wrap"
+                      >
+                        <div
+                          data-css-54=""
+                          data-css-56=""
+                        >
+                          <ForwardRef
+                            alignH="center"
+                            alignV="center"
+                            data-css-55=""
+                            direction="row"
+                            onClick={[Function]}
+                          >
+                            <div
+                              data-css-18=""
+                              data-css-55=""
+                              onClick={[Function]}
+                            >
+                              <ForwardRef
+                                alignH="center"
+                                alignV="center"
+                                dangerouslySetInnerHTML={
+                                  Object {
+                                    "__html": "",
+                                  }
+                                }
+                                data-css-57=""
+                              >
+                                <div
+                                  dangerouslySetInnerHTML={
+                                    Object {
+                                      "__html": "",
+                                    }
+                                  }
+                                  data-css-14=""
+                                  data-css-57=""
+                                />
+                              </ForwardRef>
+                            </div>
+                          </ForwardRef>
+                        </div>
+                      </ForwardRef>
+                      <ForwardRef
+                        data-css-21=""
+                        data-css-47=""
+                        data-e2e="third-party-disclaimer-text"
+                      >
+                        <div
+                          data-css-21=""
+                          data-css-47=""
+                          data-css-14=""
+                          data-e2e="third-party-disclaimer-text"
+                        >
+                          * Your inquiry and contact information will be forwarded to Some Person. This includes your email address which is test@test.com. You can change your email address in your 
+                          <Connect(Link)
+                            to="/settings"
+                          >
+                            <Link
+                              style={
+                                Object {
+                                  "color": "initial",
+                                  "fontSize": "12px",
+                                  "textDecoration": "none",
+                                }
+                              }
+                              to="/settings"
+                            >
+                              <LinkAnchor
+                                href="/settings"
+                                navigate={[Function]}
+                                style={
+                                  Object {
+                                    "color": "initial",
+                                    "fontSize": "12px",
+                                    "textDecoration": "none",
+                                  }
+                                }
+                              >
+                                <a
+                                  href="/settings"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "color": "initial",
+                                      "fontSize": "12px",
+                                      "textDecoration": "none",
+                                    }
+                                  }
+                                >
+                                  profile
+                                </a>
+                              </LinkAnchor>
+                            </Link>
+                          </Connect(Link)>
+                          .
+                        </div>
+                      </ForwardRef>
+                    </div>
+                  </ForwardRef>
+                </ForwardRef>
+              </div>
+              <ForwardRef>
+                <div
+                  data-css-14=""
+                >
+                  <ForwardRef
+                    style={
+                      Object {
+                        "height": 50,
+                      }
+                    }
+                  >
+                    <div
+                      data-css-14=""
+                      style={
+                        Object {
+                          "height": 50,
+                        }
+                      }
+                    />
+                  </ForwardRef>
+                  <ForwardRef
+                    alignH="center"
+                    alignV="center"
+                    data-css-60=""
+                    data-css-58=""
+                    direction="row"
+                    flex="flex"
+                  >
+                    <div
+                      data-css-61=""
+                      data-css-60=""
+                      data-css-58=""
+                    >
+                      <button
+                        data-css-1=""
+                        data-e2e="service-center-overlay-send"
+                        disabled={false}
+                        type="submit"
+                      >
+                        <ForwardRef
+                          data-css-62=""
+                        >
+                          <div
+                            data-css-62=""
+                            data-css-14=""
+                          >
+                            Send
+                          </div>
+                        </ForwardRef>
+                      </button>
+                    </div>
+                  </ForwardRef>
+                </div>
+              </ForwardRef>
+            </form>
+          </div>
+        </ForwardRef>
+      </div>
+    </ForwardRef>
+  </div>,
+  <Connect(Connect(ComponentWithMixpanel))
+    onRequestClose={[MockFunction]}
+    overlayData={
+      Object {
+        "addressId": "address-1234",
+        "category": Object {
+          "description": Object {
+            "en_US": "foo",
+          },
+          "id": "category-1234",
+          "key": "some-key",
+          "name": Object {
+            "en_US": "Cleaning",
+          },
+          "thirdPartyData": true,
+          "vocabulary": "bar",
+        },
+        "craftsperson": "Some Person",
+      }
+    }
+  >
+    <Connect(ComponentWithMixpanel)
+      addresses={
+        Array [
+          Object {
+            "id": "address-1234",
+            "key": "Address#1",
+          },
+          Object {
+            "id": "address-3456",
+            "key": "Address#2",
+          },
+        ]
+      }
+      categories={
+        Array [
+          Object {
+            "description": Object {
+              "en_US": "foo",
+            },
+            "id": "category-1234",
+            "key": "some-key",
+            "name": Object {
+              "en_US": "Cleaning",
+            },
+            "thirdPartyData": true,
+            "vocabulary": "bar",
+          },
+        ]
+      }
+      dispatch={[Function]}
+      email="test@test.com"
+      locale="en_US"
+      onRequestClose={[MockFunction]}
+      overlayData={
+        Object {
+          "addressId": "address-1234",
+          "category": Object {
+            "description": Object {
+              "en_US": "foo",
+            },
+            "id": "category-1234",
+            "key": "some-key",
+            "name": Object {
+              "en_US": "Cleaning",
+            },
+            "thirdPartyData": true,
+            "vocabulary": "bar",
+          },
+          "craftsperson": "Some Person",
+        }
+      }
+      phoneNumber="+49 000 00000"
+      theme="#000000"
+      utilisationPeriodId="9999"
+    >
+      <Connect(withRequest(undefined))
+        addresses={
+          Array [
+            Object {
+              "id": "address-1234",
+              "key": "Address#1",
+            },
+            Object {
+              "id": "address-3456",
+              "key": "Address#2",
+            },
+          ]
+        }
+        categories={
+          Array [
+            Object {
+              "description": Object {
+                "en_US": "foo",
+              },
+              "id": "category-1234",
+              "key": "some-key",
+              "name": Object {
+                "en_US": "Cleaning",
+              },
+              "thirdPartyData": true,
+              "vocabulary": "bar",
+            },
+          ]
+        }
+        dispatch={[Function]}
+        email="test@test.com"
+        intl={
+          Object {
+            "defaultFormats": Object {},
+            "defaultLocale": "en",
+            "formatDate": [Function],
+            "formatDateToParts": [Function],
+            "formatHTMLMessage": [Function],
+            "formatList": [Function],
+            "formatMessage": [Function],
+            "formatNumber": [Function],
+            "formatNumberToParts": [Function],
+            "formatPlural": [Function],
+            "formatRelativeTime": [Function],
+            "formatTime": [Function],
+            "formatTimeToParts": [Function],
+            "formats": Object {},
+            "formatters": Object {
+              "getDateTimeFormat": [Function],
+              "getListFormat": [Function],
+              "getMessageFormat": [Function],
+              "getNumberFormat": [Function],
+              "getPluralRules": [Function],
+              "getRelativeTimeFormat": [Function],
+            },
+            "locale": "en-US",
+            "messages": Object {},
+            "onError": [Function],
+            "textComponent": "span",
+            "timeZone": undefined,
+          }
+        }
+        locale="en_US"
+        mixpanel={[Function]}
+        onRequestClose={[MockFunction]}
+        overlayData={
+          Object {
+            "addressId": "address-1234",
+            "category": Object {
+              "description": Object {
+                "en_US": "foo",
+              },
+              "id": "category-1234",
+              "key": "some-key",
+              "name": Object {
+                "en_US": "Cleaning",
+              },
+              "thirdPartyData": true,
+              "vocabulary": "bar",
+            },
+            "craftsperson": "Some Person",
+          }
+        }
+        phoneNumber="+49 000 00000"
+        theme="#000000"
+        utilisationPeriodId="9999"
+      />
+    </Connect(ComponentWithMixpanel)>
+  </Connect(Connect(ComponentWithMixpanel))>,
+]
+`;

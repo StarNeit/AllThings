@@ -1,0 +1,13 @@
+{
+  "short_name": "Allthings",
+  "name": "Allthings",
+  "prefer_related_applications": true,
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "me.allthings.app"
+    }
+  ]
+}

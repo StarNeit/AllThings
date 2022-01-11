@@ -1,0 +1,10 @@
+version: '2.2'
+services:
+  app:
+    volumes:
+      - ../..:/srv/www/app
+      # Use the build node_modules for the tests:
+      - ../../build/node_modules:/srv/www/app/node_modules
+  nginx:
+    volumes:
+      - ../../public:/srv/www/app/public:ro

@@ -1,0 +1,36 @@
+version: '2.2'
+networks:
+  default:
+    external:
+      name: devenv_default
+services:
+  browserstack:
+    image: allthings/browserstack-local
+    command:
+      - --only-automate
+      - --force-local
+      - --local-identifier
+      - ${BROWSERSTACK_LOCAL_ID}
+      - --key
+      - ${BROWSERSTACK_KEY}
+    external_links:
+      - devenv_nginx_1:api.dev.allthings.me
+      - devenv_nginx_1:app.dev.allthings.me
+      - devenv_nginx_1:cockpit.dev.allthings.me
+      - devenv_nginx_1:static.dev.allthings.me
+      - devenv_nginx_1:assets.dev.allthings.me
+  nightwatch:
+    image: allthings/nightwatch:0.9
+    init: true
+    depends_on:
+      - browserstack
+    volumes:
+      - .:/home/node
+    environment:
+      - SELENIUM_HOST=hub.browserstack.com
+      - MAILHOG_API_URL=http://mailhog:8025/api/v2
+      - LAUNCH_URL
+      - BROWSERSTACK_LOCAL=true
+      - BROWSERSTACK_LOCAL_ID
+      - BROWSERSTACK_USER
+      - BROWSERSTACK_KEY

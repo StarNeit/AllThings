@@ -1,0 +1,9 @@
+{
+  "extends": ["@allthings"],
+  "packageRules": [
+    {
+      "packageNames": ["query-string"],
+      "allowedVersions": "<6.0"
+    }
+  ]
+}

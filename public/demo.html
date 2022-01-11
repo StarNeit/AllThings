@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mobile Demo</title>
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      body {
+        background: #34495e;
+        text-align: center;
+      }
+      #device {
+        background-size: contain;
+        display: inline-block;
+        margin: 50px;
+        position: relative;
+        z-index: 1;
+      }
+      iframe {
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+      .iphone-portrait {
+        background: url(https://static.allthings.me/app/production/static/img/devices/iphone.svg)
+          no-repeat;
+      }
+      .iphone-portrait iframe {
+        width: 375px;
+        height: 667px;
+        margin: 137px 73px 142px 72px;
+      }
+      .iphone-landscape {
+        background: url(https://static.allthings.me/app/production/static/img/devices/iphone-landscape.svg)
+          no-repeat;
+      }
+      .iphone-landscape iframe {
+        width: 667px;
+        height: 375px;
+        margin: 73px 142px 73px 136px;
+      }
+      .ipad-portrait {
+        background: url(https://static.allthings.me/app/production/static/img/devices/ipad.svg)
+          no-repeat;
+      }
+      .ipad-portrait iframe {
+        width: 768px;
+        height: 1024px;
+        margin: 178px 96px 200px 95px;
+      }
+      .ipad-landscape {
+        background: url(https://static.allthings.me/app/production/static/img/devices/ipad-landscape.svg)
+          no-repeat;
+      }
+      .ipad-landscape iframe {
+        width: 1024px;
+        height: 768px;
+        margin: 96px 200px 96px 178px;
+      }
+      .macbook {
+        /*transform: scale(0.75);*/
+        background: url(https://static.allthings.me/app/production/static/img/devices/macbook.svg)
+          no-repeat;
+      }
+      .macbook iframe {
+        width: 1280px;
+        height: 800px;
+        margin: 120px 254px 158px 254px;
+      }
+
+      #menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 2;
+      }
+      ul {
+        text-align: left;
+        display: inline;
+        margin: 0;
+        padding: 15px 4px 17px 0;
+        list-style: none;
+      }
+      ul li {
+        display: inline-block;
+        margin-right: -4px;
+        position: relative;
+        width: 50px;
+        height: 40px;
+        padding-top: 10px;
+        text-align: center;
+        background: #fff;
+        color: #ccc;
+        border: 1px solid #efefef;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 1.3em;
+        vertical-align: middle;
+        margin-top: -1px;
+      }
+      ul li i {
+        display: block;
+      }
+      ul li:hover {
+        background: #f9f9f9;
+        color: #3598db;
+      }
+      ul li ul {
+        padding: 0;
+        position: absolute;
+        top: 50px;
+        left: -1px;
+        width: 50px;
+        box-shadow: none;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s;
+      }
+      ul li ul.range-selector {
+        width: 150px;
+        margin-left: -100px;
+      }
+      ul li ul.range-selector li {
+        width: 150px;
+      }
+      ul li ul li {
+        background: #fff;
+        display: block;
+        /*color: #fff;*/
+      }
+      ul li ul li:hover {
+        background: #f9f9f9;
+      }
+      ul li:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+      .active {
+        color: #3598db;
+      }
+      #canvas {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="iphone-portrait" id="device">
+      <iframe id="iframe" src="/"></iframe>
+    </div>
+    <div id="menu">
+      <ul>
+        <li>
+          <i id="active-icon" class="fa fa-mobile-phone"></i>
+          <ul id="device-switch">
+            <li>
+              <i
+                class="fa fa-mobile-phone active"
+                data-device="iphone-portrait"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-mobile-phone"
+                style="transform: rotate(-90deg);"
+                data-device="iphone-landscape"
+              ></i>
+            </li>
+            <li><i class="fa fa-tablet" data-device="ipad-portrait"></i></li>
+            <li>
+              <i
+                class="fa fa-tablet"
+                style="transform: rotate(-90deg);"
+                data-device="ipad-landscape"
+              ></i>
+            </li>
+            <li><i class="fa fa-laptop" data-device="macbook"></i></li>
+          </ul>
+        </li>
+        <li>
+          <i class="fa fa-arrows-alt"></i>
+          <ul class="range-selector">
+            <li>
+              <input
+                type="range"
+                id="range"
+                min="10"
+                max="100"
+                step="10"
+                value="100"
+              />
+            </li>
+          </ul>
+        </li>
+        <!-- <li><i id="download" class="fa fa-download"></i></li> -->
+      </ul>
+    </div>
+    <!-- <canvas id="canvas"></canvas> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="//html2canvas.hertzen.com/build/html2canvas.js"></script> -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var activeDevice = 'iphone-portrait'
+
+        $('#device-switch li').on('click', function() {
+          var activeIcon = $('i', this)
+          var newDevice = activeIcon.data('device')
+          $('#device-switch i').removeClass('active')
+          activeIcon.addClass('active')
+          $('#active-icon')
+            .attr('class', activeIcon.attr('class'))
+            .attr('style', ' ')
+            .attr('style', activeIcon.attr('style'))
+          $('#device').attr('class', newDevice)
+          $('#range')
+            .val(100)
+            .change()
+          activeDevice = newDevice
+        })
+
+        $('#range').on('change', function() {
+          var scale = $(this).val() * 0.01
+          console.log(scale)
+          // $('#device').css('transform','scale('+scale+')')
+          $('#device').css(
+            'transform',
+            'scale3d(' + scale + ',' + scale + ',' + scale + ')',
+          )
+        })
+
+        // $('#download').on('click',function(){
+        //   html2canvas(document.body, {
+        //       allowTaint: true,
+        //       taintTest: false,
+        //       useCORS: true,
+        //       background: undefined,
+        //       onrendered: function(canvas) {
+        //           document.body.appendChild(canvas);
+        //       }
+        //   });
+        // });
+      })
+    </script>
+  </body>
+</html>

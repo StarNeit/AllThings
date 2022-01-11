@@ -1,0 +1,32 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "T2Y8GQD3JL.me.allthings.native",
+        "paths":  [
+          "",
+          "/",
+          "/pinboard",
+          "/pinboard/*",
+          "/booking",
+          "/booking/*",
+          "/service-center",
+          "/service-center/*",
+          "/settings",
+          "/marketplace",
+          "/marketplace/*",
+          "/sharing",
+          "/sharing/*",
+          "/documents",
+          "/documents/*",
+          "/information",
+          "/information/*",
+          "/my-profile",
+          "/notifications",
+          "/my-flat"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+version: '2.2'
+volumes:
+  assets:
+  app_public:
+  cockpit_public:
+  accounts_public:
+services:
+  mongodb:
+    image: mongo:3.6
+  mongorestore:
+    extends:
+      file: host-mounts.yml
+      service: mongorestore
+    volumes:
+      - assets:/data/assets
+    depends_on:
+      - mongodb
+  redis:
+    image: redis:2.8
+  mailhog:
+    image: allthings/mailhog
+  postgres:
+    image: postgres:alpine
+    healthcheck:
+      test: psql -U postgres -p 5432 -W -d role_permission -w -c 'SELECT COUNT(*) FROM import_finished;' && psql -U postgres -p 5432 -W -d insights -w -c 'SELECT COUNT(*) FROM import_finished;'
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    environment:
+      POSTGRES_PASSWORD: not_a_secret
+      POSTGRES_USER: postgres
+  postgres-restore:
+    extends:
+      file: host-mounts.yml
+      service: postgres-restore
+    environment:
+      POSTGRES_PASSWORD: not_a_secret
+      PGPASSWORD: not_a_secret
+      POSTGRES_USER: postgres
+    depends_on:
+      postgres:
+        condition: service_started
+  rope:
+    extends:
+      file: host-mounts.yml
+      service: rope
+    environment:
+      - LOGGING=true
+      - PGHOST=postgres
+      - PGUSER=postgres
+      - PGPASSWORD=not_a_secret
+      - PGPORT=5432
+      - PGDATABASE=role_permission
+    depends_on:
+      postgres-restore:
+        condition: service_started
+  php:
+    extends:
+      file: host-mounts.yml
+      service: php
+    depends_on:
+      - mongorestore
+      - redis
+      - mailhog
+      - messagetemplates
+    volumes:
+      - assets:/srv/www/symfony/web/assets
+    environment:
+      - SYMFONY_ENV=ci
+      - SYMFONY__MONGODB__DBNAME=qipp_core_dev
+      - SYMFONY__ASSETS__BASE__URL=https://assets.dev.allthings.me/
+      - SYMFONY__MAX__LOGIN__ATTEMPTS=999999999999
+      - SYMFONY__ROPE__CONNECT__URL=http://rope
+      - SYMFONY__ROPE__PORT=7000
+      - SYMFONY__ROPE__CUSTOM__HEADER=
+  messagetemplates:
+    image: allthings/messagetemplates
+  accounts:
+    extends:
+      file: host-mounts.yml
+      service: accounts
+    environment:
+      - ALLTHINGS_ACCOUNTS_RECAPTCHA_SECRET_KEY
+  api:
+    image: allthings/nginx-api-proxy
+    volumes:
+      - assets:/srv/www/symfony/web/assets:ro
+    environment:
+      - SSL_PASS
+  app:
+    extends:
+      file: host-mounts.yml
+      service: app
+    links:
+      - nginx:api.dev.allthings.me
+      - nginx:app.dev.allthings.me
+      - nginx:accounts.dev.allthings.me
+  cockpit:
+    extends:
+      file: host-mounts.yml
+      service: cockpit
+    links:
+      - 'nginx:api.dev.allthings.me'
+      - 'nginx:cockpit.dev.allthings.me'
+  graphql:
+    image: allthings/graphql
+    environment:
+      - NODE_ENV
+      - PORT=6000
+      - LOGGING=
+      - GOOGLE_API_KEY
+    links:
+      - 'nginx:api.dev.allthings.me'
+      - 'nginx:graphql.dev.allthings.me'
+  insights:
+    image: allthings/insights
+    environment:
+      - NODE_ENV
+      - PORT=9620
+      - LOGGING=
+    links:
+      - 'nginx:api.dev.allthings.me'
+      - 'nginx:insights.dev.allthings.me'
+    depends_on:
+      postgres-restore:
+        condition: service_started
+  nginx:
+    extends:
+      file: host-mounts.yml
+      service: nginx
+    environment:
+      - NGINX_ENV=production
+      - SSL_PASS
+    extra_hosts:
+      - developer-console:127.0.0.1
+  chromedriver:
+    image: allthings/chromedriver
+    init: true
+    tmpfs: /tmp
+    depends_on:
+      php:
+        condition: service_healthy
+      api:
+        condition: service_healthy
+      accounts:
+        condition: service_healthy
+      app:
+        condition: service_healthy
+      cockpit:
+        condition: service_healthy
+      nginx:
+        condition: service_healthy
+      rope:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      graphql:
+        condition: service_healthy
+      insights:
+        condition: service_healthy
+    links:
+      - nginx:api.dev.allthings.me
+      - nginx:app.dev.allthings.me
+      - nginx:cockpit.dev.allthings.me
+      - nginx:static.dev.allthings.me
+      - nginx:assets.dev.allthings.me
+      - nginx:accounts.dev.allthings.me
+      - nginx:graphql.dev.allthings.me
+      - nginx:insights.dev.allthings.me
+    extra_hosts:
+      - cdn.mxpnl.com:127.0.0.1
+      - api.mixpanel.com:127.0.0.1
+    volumes:
+      - ./assets:/home/webdriver/assets
+    environment:
+      - ENABLE_VNC
+      - EXPOSE_X11
+    ports:
+      - ${VNC_PORT_MAPPING}
+  nightwatch:
+    image: allthings/nightwatch:0.9
+    init: true
+    volumes:
+      - .:/home/node
+    environment:
+      - VIDEOS_ENABLED
+      - SCREENSHOTS_DIFF
+      - WAIT_FOR_TIMEOUT=30
+      - WAIT_FOR_HOSTS=mailhog:8025 chromedriver:4444
+      - SELENIUM_HOST=chromedriver
+      - MAILHOG_API_URL=http://mailhog:8025/api/v2
+      - LAUNCH_URL

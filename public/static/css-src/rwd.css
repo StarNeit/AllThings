@@ -1,0 +1,136 @@
+/****************************************
+  Allthings Styleguide Responsive Styles
+*****************************************/
+@media all and (min-width: 931px){
+    .settingsFormGroup-item {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .mainOverlay-mainHeaderPopup {
+        top: 50px;
+        width: 366px;
+        left: 33%;
+        height: auto;
+        min-height: auto;
+        position: absolute;
+    }
+    .mainOverlay-mainHeaderPopup-notification {
+        margin-left: -101px;
+    }
+    .mainOverlay-mainHeaderPopup-create {
+        margin-left: -63px;
+    }
+        .mainOverlay-mainHeaderPopup .mainOverlayContent:before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 25px;
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 10px solid #7e8c8d;
+        }
+
+        .mainOverlay-mainHeaderPopup .mainOverlayContent {
+            -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.25);
+            padding: 1px;
+        }
+    .mainWrapper.loggedScreen {
+        padding-left: 375px;
+    }
+        .loggedScreen .mainHeader, .loggedScreen .serviceChooser {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 375px;
+        }
+        .loggedScreen .mainHeader {
+            z-index: 2;
+        }
+            .loggedScreen .mainHeader-wrapper {
+                width: 100%;
+                max-width: 375px;
+                float: right;
+            }
+            .loggedScreen .mainHeader .appIntro {
+                display: block;
+            }
+            .loggedScreen .mainHeader-actions {
+                top: 10px;
+            }
+        .loggedScreen .serviceChooser {
+            display: block;
+            min-height: 100%;
+        }
+            .loggedScreen .serviceChooser nav {
+                padding-top: 70px;
+                width: 100%;
+                max-width: 375px;
+                float: right;
+            }
+            .loggedScreen .serviceChooser .appIntro {
+                display: none;
+            }
+
+    .mainHeader-wrapper {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+    .mainOverlayContent {
+        max-width: 880px;
+        margin: 0 auto;
+        background: #000000;
+        transform: none !important;
+    }
+    .imageGallery {
+        width: 880px;
+        height: 600px;
+    }
+    .imageGallery-buttonContainer.left {
+      left: 1em;
+    }
+    .imageGallery-buttonContainer.right {
+      right: 1em;
+    }
+    .appbar {
+        max-width: 880px;
+    }
+    .loggedScreen .mainContent {
+        max-width: 880px;
+    }
+
+    .serviceChooser li {
+        transform: translateX(0)!important;
+    }
+    .serviceChooser {
+        opacity: 1!important;
+    }
+    .serviceChooser-button-label {
+        opacity: 1!important;
+    }
+    .serviceChooser-button-label {
+        opacity: 1!important;
+    }
+
+    .serviceChooser-button svg {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+}
+
+@media all and (min-width: 350px){
+    .unloggedScreen .mainContent-wrapper {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 761px){
+    .informationDetail-documents {
+        clear: both;
+    }
+}
